@@ -23,7 +23,26 @@
         android:id="@+id/nav_recipe"
         android:name="com.example.dietbalanceapplication.ListView.RecipesFragment"
         android:label="@string/fragment_recipe"
-        tools:layout="@layout/fragment_recipes" />
+        tools:layout="@layout/fragment_recipes" >
+        <action
+            android:id="@+id/action_nav_recipe_to_avocadoFragment"
+            app:destination="@id/avocadoFragment" />
+        <action
+            android:id="@+id/action_nav_recipe_to_eggsFragment"
+            app:destination="@id/eggsFragment" />
+        <action
+            android:id="@+id/action_nav_recipe_to_omeletFragment"
+            app:destination="@id/omeletFragment" />
+        <action
+            android:id="@+id/action_nav_recipe_to_quesadillasFragment"
+            app:destination="@id/quesadillasFragment" />
+        <action
+            android:id="@+id/action_nav_recipe_to_saladFragment"
+            app:destination="@id/saladFragment" />
+        <action
+            android:id="@+id/action_nav_recipe_to_veggieFragment"
+            app:destination="@id/veggieFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_tips"
         android:name="com.example.dietbalanceapplication.DietTipsFragment"
@@ -39,4 +58,34 @@
         android:name="com.example.dietbalanceapplication.MoreInfoFragment"
         android:label="@string/fragment_more_info"
         tools:layout="@layout/fragment_more_info" />
+    <fragment
+        android:id="@+id/avocadoFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.AvocadoFragment"
+        android:label="fragment_avocado"
+        tools:layout="@layout/fragment_avocado" />
+    <fragment
+        android:id="@+id/eggsFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.EggsFragment"
+        android:label="fragment_eggs"
+        tools:layout="@layout/fragment_eggs" />
+    <fragment
+        android:id="@+id/omeletFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.OmeletFragment"
+        android:label="fragment_omelet"
+        tools:layout="@layout/fragment_omelet" />
+    <fragment
+        android:id="@+id/quesadillasFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.QuesadillasFragment"
+        android:label="fragment_quesadillas"
+        tools:layout="@layout/fragment_quesadillas" />
+    <fragment
+        android:id="@+id/saladFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.SaladFragment"
+        android:label="fragment_salad"
+        tools:layout="@layout/fragment_salad" />
+    <fragment
+        android:id="@+id/veggieFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.VeggieFragment"
+        android:label="fragment_veggie"
+        tools:layout="@layout/fragment_veggie" />
 </navigation>
