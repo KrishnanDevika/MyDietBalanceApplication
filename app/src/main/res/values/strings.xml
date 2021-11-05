@@ -19,4 +19,24 @@
     <string name="fragment_diet_tips">Diet Tips</string>
     <string name="fragment_bog">Blogs</string>
     <string name="fragment_more_info">More Information</string>
+
+    <string name="avocado">Avocado Sandwich</string>
+    <string name="avocadoDesc">\t\t\tThis is a good option for lunch or dinner. It does not use too much cheese, and avocados contain healthy fats and nutrients </string>
+    <string name="avocado_ing">\t\t\tYou will only need one ripe tomato, one avocado, sliced bread, butter, mozzarella cheese slices and a sprinkle of salt. </string>
+    <string name="eggs">Scrambled Eggs</string>
+    <string name="eggDesc">\t\t\tEggs are a good source of protein. Eggs taste good, are protein-filled and really easy to make. </string>
+    <string name="egg_ing">\t\t\tYou will only need a mixing bowl, eggs, goat cheese, salt, fresh-ground black pepper, butter and chopped chives. </string>
+    <string name="salad">Salad</string>
+    <string name="saladDesc">\t\t\t Sprucing up your leafy greens with veggies, beans, chickpeas, nuts or seeds, and then drizzling with olive oil and vinegar. You can add a piece of crispy bread to make it more of a meal. </string>
+    <string name="salad_ing">\t\t\t If you eat meat, add chicken or tuna. For extra flavor, consider a sprinkle of salt.  </string>
+    <string name="omelet">Cheese Omelet</string>
+    <string name="omeletDesc">\t\t\tThis is a good option for lunch or dinner.You can add a fried egg on top of anything and make it more of a hearty meal, like on top of salad</string>
+    <string name="omelet_ing">\t\t\t You need parsley, garlic cloves, olive oil, red wine vinegar, salt and red pepper flakes. You can also add steak, fish, taco or sandwich dishes. </string>
+    <string name="quesadillas">Greek Quesadillas</string>
+    <string name="quesadillasDesc">\t\t\tThe Greek quesadillas are packed with vegetables such as spinach and peppers. It is just a good way to make a satisfying meal that is easy to make. </string>
+    <string name="quesadillas_ing">\t\t\tYou will need tortillas, fresh spinach, red onion, roasted red peppers, black olives, shredded mozzarella cheese, feta cheese crumbles, oregano and/or red pepper flakes.  </string>
+    <string name="veggie">Veggie Sandwich</string>
+    <string name="veggieDesc">\t\t\tThis sandwich is made with hummus – and it is vegan-friendly. Combine whatever vegetables you have on hand with hummus on a sandwich. It is delicious and satisfying, and it is good for you. </string>
+    <string name="veggie_ing">\t\t\tYou will only need  a red onion, one carrot, pea shoots, whole-grain bread and feta cheese crumbles. </string>
+
 </resources>

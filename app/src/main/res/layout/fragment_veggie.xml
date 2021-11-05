@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding"
+    tools:context=".SampleHealthyRecipes.VeggieFragment">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/veggie"
+        android:textAlignment="center"
+        android:textSize="@dimen/title_size" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/layout_padding"
+        android:src="@drawable/veg" />
+
+    <TextView
+        android:id="@+id/recipeDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/veggieDesc" />
+
+    <TextView
+        android:id="@+id/recipeIng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/veggie_ing" />
+
+</LinearLayout>
