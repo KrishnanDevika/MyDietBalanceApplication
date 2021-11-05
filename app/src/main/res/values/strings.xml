@@ -2,8 +2,8 @@
     <string name="app_name">DietBalanceApplication</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Diet Balance</string>
+    <string name="nav_header_subtitle">aaradietcare@adc.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -19,6 +19,7 @@
     <string name="fragment_diet_tips">Diet Tips</string>
     <string name="fragment_bog">Blogs</string>
     <string name="fragment_more_info">More Information</string>
+
 
     <string name="avocado">Avocado Sandwich</string>
     <string name="avocadoDesc">\t\t\tThis is a good option for lunch or dinner. It does not use too much cheese, and avocados contain healthy fats and nutrients </string>

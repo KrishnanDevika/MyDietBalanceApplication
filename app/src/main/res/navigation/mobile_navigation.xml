@@ -61,31 +61,31 @@
     <fragment
         android:id="@+id/avocadoFragment"
         android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.AvocadoFragment"
-        android:label="fragment_avocado"
+        android:label="@string/avocado"
         tools:layout="@layout/fragment_avocado" />
     <fragment
         android:id="@+id/eggsFragment"
         android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.EggsFragment"
-        android:label="fragment_eggs"
+        android:label="@string/eggs"
         tools:layout="@layout/fragment_eggs" />
     <fragment
         android:id="@+id/omeletFragment"
         android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.OmeletFragment"
-        android:label="fragment_omelet"
+        android:label="@string/omelet"
         tools:layout="@layout/fragment_omelet" />
     <fragment
         android:id="@+id/quesadillasFragment"
         android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.QuesadillasFragment"
-        android:label="fragment_quesadillas"
+        android:label="@string/quesadillas"
         tools:layout="@layout/fragment_quesadillas" />
     <fragment
         android:id="@+id/saladFragment"
         android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.SaladFragment"
-        android:label="fragment_salad"
+        android:label="@string/salad"
         tools:layout="@layout/fragment_salad" />
     <fragment
         android:id="@+id/veggieFragment"
         android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.VeggieFragment"
-        android:label="fragment_veggie"
+        android:label="@string/veggie"
         tools:layout="@layout/fragment_veggie" />
 </navigation>
