@@ -10,4 +10,13 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dietFragmentName">Diet Balance</string>
+    <string name="fragment_user_profile">User Profile</string>
+    <string name="fragment_calculator">Calorie Calculator</string>
+    <string name="fragment_recipe">Sample Healthy Recipes</string>
+    <string name="fragment_diet_tips">Diet Tips</string>
+    <string name="fragment_bog">Blogs</string>
+    <string name="fragment_more_info">More Information</string>
 </resources>
