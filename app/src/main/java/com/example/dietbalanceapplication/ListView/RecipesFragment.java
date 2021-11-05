@@ -11,6 +11,8 @@ import android.widget.ListView;
 
 import com.example.dietbalanceapplication.R;
 
+import java.util.ArrayList;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link RecipesFragment#newInstance} factory method to
@@ -64,6 +66,16 @@ public class RecipesFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_recipes, container, false);
         ListView recipeList = view.findViewById(R.id.recipeList);
+
+        ArrayList<HealthyRecipes> recipesArrayList2 = new ArrayList<>();
+        recipesArrayList2.add(new HealthyRecipes(R.drawable.avacado, "Avocado Sandwich"));
+        recipesArrayList2.add(new HealthyRecipes(R.drawable.eggs, "Scrambled eggs"));
+        recipesArrayList2.add(new HealthyRecipes(R.drawable.quesadillas, "Greek Quesadillas"));
+        recipesArrayList2.add(new HealthyRecipes(R.drawable.veg, "Veggie Sandwich"));
+        recipesArrayList2.add(new HealthyRecipes(R.drawable.omlet, "Cheese Omelet"));
+        recipesArrayList2.add(new HealthyRecipes(R.drawable.salad, "Salad"));
+
+        recipeList.setAdapter(new CustomListViewAdapter(getContext(), recipesArrayList2));
         return view;
     }
 }
