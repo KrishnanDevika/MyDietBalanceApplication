@@ -3,10 +3,12 @@ package com.example.dietbalanceapplication.ListView;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.dietbalanceapplication.R;
@@ -67,15 +69,41 @@ public class RecipesFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_recipes, container, false);
         ListView recipeList = view.findViewById(R.id.recipeList);
 
-        ArrayList<HealthyRecipes> recipesArrayList2 = new ArrayList<>();
-        recipesArrayList2.add(new HealthyRecipes(R.drawable.avacado, "Avocado Sandwich"));
-        recipesArrayList2.add(new HealthyRecipes(R.drawable.eggs, "Scrambled eggs"));
-        recipesArrayList2.add(new HealthyRecipes(R.drawable.quesadillas, "Greek Quesadillas"));
-        recipesArrayList2.add(new HealthyRecipes(R.drawable.veg, "Veggie Sandwich"));
-        recipesArrayList2.add(new HealthyRecipes(R.drawable.omlet, "Cheese Omelet"));
-        recipesArrayList2.add(new HealthyRecipes(R.drawable.salad, "Salad"));
+        ArrayList<HealthyRecipes> recipesArrayList = new ArrayList<>();
+        recipesArrayList.add(new HealthyRecipes(R.drawable.avacado, "Avocado Sandwich"));
+        recipesArrayList.add(new HealthyRecipes(R.drawable.eggs, "Scrambled eggs"));
+        recipesArrayList.add(new HealthyRecipes(R.drawable.quesadillas, "Greek Quesadillas"));
+        recipesArrayList.add(new HealthyRecipes(R.drawable.veg, "Veggie Sandwich"));
+        recipesArrayList.add(new HealthyRecipes(R.drawable.omlet, "Cheese Omelet"));
+        recipesArrayList.add(new HealthyRecipes(R.drawable.salad, "Salad"));
 
-        recipeList.setAdapter(new CustomListViewAdapter(getContext(), recipesArrayList2));
+        recipeList.setAdapter(new CustomListViewAdapter(getContext(), recipesArrayList));
+        recipeList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+
+                switch(position){
+                    case 0:
+                        Navigation.findNavController(view).navigate(R.id.action_nav_recipe_to_avocadoFragment);
+                        break;
+                    case 1:
+                        Navigation.findNavController(view).navigate(R.id.action_nav_recipe_to_eggsFragment);
+                        break;
+                    case 2:
+                        Navigation.findNavController(view).navigate(R.id.action_nav_recipe_to_quesadillasFragment);
+                        break;
+                    case 3:
+                        Navigation.findNavController(view).navigate(R.id.action_nav_recipe_to_veggieFragment);
+                        break;
+                    case 4:
+                        Navigation.findNavController(view).navigate(R.id.action_nav_recipe_to_omeletFragment);
+                        break;
+                    case 5:
+                        Navigation.findNavController(view).navigate(R.id.action_nav_recipe_to_saladFragment);
+                        break;
+                }
+            }
+        });
         return view;
     }
 }
