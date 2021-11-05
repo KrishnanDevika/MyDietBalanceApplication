@@ -2,4 +2,41 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation" />
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_diet">
+    <fragment
+        android:id="@+id/nav_diet"
+        android:name="com.example.dietbalanceapplication.DietBalanceFragment"
+        android:label="@string/dietFragmentName"
+        tools:layout="@layout/fragment_diet_balance" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.dietbalanceapplication.UserProfileFragment"
+        android:label="@string/fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/nav_calc"
+        android:name="com.example.dietbalanceapplication.CalculatorFragment"
+        android:label="@string/fragment_calculator"
+        tools:layout="@layout/fragment_calculator" />
+    <fragment
+        android:id="@+id/nav_recipe"
+        android:name="com.example.dietbalanceapplication.RecipesFragment"
+        android:label="@string/fragment_recipe"
+        tools:layout="@layout/fragment_recipes" />
+    <fragment
+        android:id="@+id/nav_tips"
+        android:name="com.example.dietbalanceapplication.DietTipsFragment"
+        android:label="@string/fragment_diet_tips"
+        tools:layout="@layout/fragment_diet_tips" />
+    <fragment
+        android:id="@+id/nav_blog"
+        android:name="com.example.dietbalanceapplication.BlogFragment"
+        android:label="@string/fragment_bog"
+        tools:layout="@layout/fragment_blog" />
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.dietbalanceapplication.MoreInfoFragment"
+        android:label="@string/fragment_more_info"
+        tools:layout="@layout/fragment_more_info" />
+</navigation>
