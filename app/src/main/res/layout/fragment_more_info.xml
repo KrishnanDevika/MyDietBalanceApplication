@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ContactsList.MoreInfoFragment"
-    android:padding="@dimen/layout_padding">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ContactsList.MoreInfoFragment">
 
     <ListView
         android:id="@+id/contactList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_padding" />
+</LinearLayout>

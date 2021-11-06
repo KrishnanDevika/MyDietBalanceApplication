@@ -7,8 +7,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.example.dietbalanceapplication.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -62,6 +65,16 @@ public class MoreInfoFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_more_info, container, false);
+        ListView contactList = view.findViewById(R.id.contactList);
+
+        ArrayList<Contacts> contacts = new ArrayList<>();
+        contacts.add(new Contacts(R.drawable.ic_baseline_location_on_24, "Location", "Diet Center Nearby"));
+        contacts.add(new Contacts(R.drawable.ic_baseline_email_24, "Email", "aaradietcare@adc.com"));
+        contacts.add(new Contacts(R.drawable.ic_baseline_call_24, "Call", "+1 219(246)4536"));
+        contacts.add(new Contacts(R.drawable.ic_baseline_message_24, "SMS", "+1 219(246)4536"));
+        contacts.add(new Contacts(R.drawable.ic_baseline_facebook_24, "Follow us", "sample"));
+
+        contactList.setAdapter(new CustomContactListAdapter(getContext(), contacts));
         return view;
     }
 }
