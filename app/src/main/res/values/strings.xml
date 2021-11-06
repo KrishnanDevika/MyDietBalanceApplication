@@ -39,5 +39,12 @@
     <string name="veggie">Veggie Sandwich</string>
     <string name="veggieDesc">\t\t\tThis sandwich is made with hummus – and it is vegan-friendly. Combine whatever vegetables you have on hand with hummus on a sandwich. It is delicious and satisfying, and it is good for you. </string>
     <string name="veggie_ing">\t\t\tYou will only need  a red onion, one carrot, pea shoots, whole-grain bread and feta cheese crumbles. </string>
+    <string name="DieticianNearby">Dietician Nearby</string>
+    <string name="DieticianEmail">Email Us</string>
+    <string name="DieticianPhone">Phone</string>
+    <string name="DieticianMessage">SMS at</string>
+    <string name="DieticianSocial">Social Media</string>
+
+
 
 </resources>

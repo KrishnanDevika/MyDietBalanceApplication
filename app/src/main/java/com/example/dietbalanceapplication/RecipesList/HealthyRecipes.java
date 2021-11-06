@@ -1,4 +1,4 @@
-package com.example.dietbalanceapplication.ListView;
+package com.example.dietbalanceapplication.RecipesList;
 
 public class HealthyRecipes {
     private int recipeImage;
