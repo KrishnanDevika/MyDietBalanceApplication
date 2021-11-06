@@ -1,4 +1,4 @@
-package com.example.dietbalanceapplication.ListView;
+package com.example.dietbalanceapplication.RecipesList;
 
 import android.os.Bundle;
 

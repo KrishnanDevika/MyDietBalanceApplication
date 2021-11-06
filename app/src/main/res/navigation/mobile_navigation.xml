@@ -21,7 +21,7 @@
         tools:layout="@layout/fragment_calculator" />
     <fragment
         android:id="@+id/nav_recipe"
-        android:name="com.example.dietbalanceapplication.ListView.RecipesFragment"
+        android:name="com.example.dietbalanceapplication.RecipesList.RecipesFragment"
         android:label="@string/fragment_recipe"
         tools:layout="@layout/fragment_recipes" >
         <action
@@ -55,7 +55,7 @@
         tools:layout="@layout/fragment_blog" />
     <fragment
         android:id="@+id/nav_info"
-        android:name="com.example.dietbalanceapplication.MoreInfoFragment"
+        android:name="com.example.dietbalanceapplication.ContactsList.MoreInfoFragment"
         android:label="@string/fragment_more_info"
         tools:layout="@layout/fragment_more_info" />
     <fragment
