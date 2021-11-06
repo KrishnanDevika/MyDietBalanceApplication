@@ -1,13 +1,18 @@
 package com.example.dietbalanceapplication.ContactsList;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.dietbalanceapplication.R;
 
@@ -70,11 +75,72 @@ public class MoreInfoFragment extends Fragment {
         ArrayList<Contacts> contacts = new ArrayList<>();
         contacts.add(new Contacts(R.drawable.ic_baseline_location_on_24, "Location", "Diet Center Nearby"));
         contacts.add(new Contacts(R.drawable.ic_baseline_email_24, "Email", "aaradietcare@adc.com"));
-        contacts.add(new Contacts(R.drawable.ic_baseline_call_24, "Call", "+1 219(246)4536"));
-        contacts.add(new Contacts(R.drawable.ic_baseline_message_24, "SMS", "+1 219(246)4536"));
+        contacts.add(new Contacts(R.drawable.ic_baseline_call_24, "Call", "+1 229(246)4536"));
+        contacts.add(new Contacts(R.drawable.ic_baseline_message_24, "SMS", "+1 229(246)4536"));
         contacts.add(new Contacts(R.drawable.ic_baseline_facebook_24, "Follow us", "sample"));
 
         contactList.setAdapter(new CustomContactListAdapter(getContext(), contacts));
+        contactList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                switch(position){
+                    case 0:
+                        Uri location = Uri.parse("geo:42.30615797210299, -82.97915163928572?&q=Diet+Center");
+                        Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+                        try{
+                            startActivity(mapIntent);
+
+                        }catch(Exception e){
+                            Toast.makeText(getContext(),"Cannot Open Maps",Toast.LENGTH_LONG).show();
+                        }
+                        break;
+                    case 1:
+                        String EmailAddress[] = {"aaramvarma@gmail.com"};
+                        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                        emailIntent.setData(Uri.parse("mailto:"));
+                        emailIntent.putExtra(Intent.EXTRA_EMAIL, EmailAddress);
+                        try{
+                            startActivity(emailIntent);
+
+                        }catch(Exception e){
+                            Toast.makeText(getContext(),"No Apps found",Toast.LENGTH_LONG).show();
+                        }
+
+                        break;
+                    case 2:
+                        Intent phoneIntent = new Intent(Intent.ACTION_DIAL,
+                                Uri.parse("tel:2292464536"));
+                        try{
+                            startActivity(phoneIntent);
+
+                        }catch(Exception e){
+                            Toast.makeText(getContext(),"No Apps found",Toast.LENGTH_LONG).show();
+                        }
+                        break;
+                    case 3:
+                        Intent smsIntent = new Intent(Intent.ACTION_SENDTO,
+                                Uri.parse("smsto:2292464536"));
+                        try{
+                            startActivity(smsIntent);
+
+                        }catch(Exception e){
+                            Toast.makeText(getContext(),"No Apps found",Toast.LENGTH_LONG).show();
+                        }
+                        break;
+                    case 4:
+                        Intent webIntent = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("https://www.facebook.com/Diet-Center-77735372982/"));
+                        try{
+                            startActivity(webIntent);
+
+                        }catch(Exception e){
+                            Toast.makeText(getContext(),"No Apps found",Toast.LENGTH_LONG).show();
+                        }
+                        break;
+                }
+
+            }
+        });
         return view;
     }
 }
