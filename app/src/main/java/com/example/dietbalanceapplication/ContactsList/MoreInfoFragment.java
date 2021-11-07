@@ -77,7 +77,7 @@ public class MoreInfoFragment extends Fragment {
         contacts.add(new Contacts(R.drawable.ic_baseline_email_24, "Email", "aaradietcare@adc.com"));
         contacts.add(new Contacts(R.drawable.ic_baseline_call_24, "Call", "+1 229(246)4536"));
         contacts.add(new Contacts(R.drawable.ic_baseline_message_24, "SMS", "+1 229(246)4536"));
-        contacts.add(new Contacts(R.drawable.ic_baseline_facebook_24, "Follow us", "sample"));
+        contacts.add(new Contacts(R.drawable.ic_baseline_facebook_24, "Follow us", "https://www.facebook.com/"));
 
         contactList.setAdapter(new CustomContactListAdapter(getContext(), contacts));
         contactList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
