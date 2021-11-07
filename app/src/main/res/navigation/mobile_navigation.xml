@@ -88,4 +88,9 @@
         android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.VeggieFragment"
         android:label="@string/veggie"
         tools:layout="@layout/fragment_veggie" />
+    <fragment
+        android:id="@+id/nav_faq"
+        android:name="com.example.dietbalanceapplication.FAQRecyclerView.FAQFragment"
+        android:label="@string/faqTitle"
+        tools:layout="@layout/fragment_f_a_q" />
 </navigation>
