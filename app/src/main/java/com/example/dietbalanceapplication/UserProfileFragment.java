@@ -7,6 +7,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +68,51 @@ public class UserProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_user_profile, container, false);
+        Spinner genderSpinner = view.findViewById(R.id.genderSelector);
+        EditText weightText = view.findViewById(R.id.weightEditText);
+        EditText heightText = view.findViewById(R.id.heightEditText);
+        ArrayList<String> genders = new ArrayList<>();
+        genders.add("");
+        genders.add("Male");
+        genders.add("Female");
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getContext(), R.layout.custom_spinner, genders);
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        genderSpinner.setBackgroundColor(getResources().getColor(R.color.lime_200));
+        genderSpinner.setAdapter(dataAdapter);
+        TextView resultText = view.findViewById(R.id.feedbackText);
+        Button submitButton = view.findViewById(R.id.submitButton);
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resultText.setVisibility(View.VISIBLE);
+                double weight = Double.parseDouble(weightText.getText().toString());
+                double height = Double.parseDouble(heightText.getText().toString());
+                double heightInMeters = height / 100;
+                double bmi;
+                bmi = weight / (heightInMeters *heightInMeters);
+
+                String feedback;
+
+                if (bmi < 18.5){
+                    feedback = "UnderWeight";
+                }else if(bmi >= 18.5 && bmi < 25){
+                    feedback = "Healthy Weight";
+                }else if(bmi >= 25 && bmi < 30){
+                    feedback = "OverWeight";
+                }else{
+                    feedback = "Obesity";
+                }
+
+                resultText.setText("Based on your Height and Weight your Body Mass Index(BMI) is "+ String.format("%.2f",bmi) +"\n"+
+                        "You are in the Category of \n"+
+                        "'" +feedback.toUpperCase()+ "'");
+
+            }
+        });
+
+
+
+        return view;
     }
 }
