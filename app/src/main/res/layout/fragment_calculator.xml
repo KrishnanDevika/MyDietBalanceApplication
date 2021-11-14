@@ -4,12 +4,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="@dimen/layout_padding"
     tools:context=".CalculatorFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <Button
+        android:id="@+id/bmiButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Body Mass Index" />
+
+    <Button
+        android:id="@+id/calorieButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Calorie Calculator" />
+
+    <Button
+        android:id="@+id/pregnancyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Pregnancy Calorie Calculator" />
+
+    <Button
+        android:id="@+id/feedingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="BreastFeeding Calorie Calculator" />
+
+    <Button
+        android:id="@+id/weightButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Ideal Weight" />
 </LinearLayout>
