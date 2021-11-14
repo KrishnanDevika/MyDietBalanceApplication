@@ -180,6 +180,7 @@
             android:layout_height="wrap_content"
             android:layout_columnSpan="2"
             android:gravity="center"
+            android:textColor="@color/black"
             android:textSize="@dimen/contact_title_size"
             android:textStyle="bold"
             android:visibility="gone"

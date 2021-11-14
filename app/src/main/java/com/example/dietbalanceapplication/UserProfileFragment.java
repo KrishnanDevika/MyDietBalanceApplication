@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -81,35 +82,42 @@ public class UserProfileFragment extends Fragment {
         genderSpinner.setBackgroundColor(getResources().getColor(R.color.lime_200));
         genderSpinner.setAdapter(dataAdapter);
         TextView resultText = view.findViewById(R.id.feedbackText);
-        Button submitButton = view.findViewById(R.id.submitButton);
-        submitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                resultText.setVisibility(View.VISIBLE);
-                double weight = Double.parseDouble(weightText.getText().toString());
-                double height = Double.parseDouble(heightText.getText().toString());
-                double heightInMeters = height / 100;
-                double bmi;
-                bmi = weight / (heightInMeters *heightInMeters);
 
-                String feedback;
+            Button submitButton = view.findViewById(R.id.submitButton);
+            submitButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    try {
+                        resultText.setVisibility(View.VISIBLE);
+                        double weight = Double.parseDouble(weightText.getText().toString());
+                        double height = Double.parseDouble(heightText.getText().toString());
+                        double heightInMeters = height / 100;
+                        double bmi;
+                        bmi = weight / (heightInMeters * heightInMeters);
 
-                if (bmi < 18.5){
-                    feedback = "UnderWeight";
-                }else if(bmi >= 18.5 && bmi < 25){
-                    feedback = "Healthy Weight";
-                }else if(bmi >= 25 && bmi < 30){
-                    feedback = "OverWeight";
-                }else{
-                    feedback = "Obesity";
+                        String feedback;
+
+                        if (bmi < 18.5) {
+                            feedback = "UnderWeight";
+                        } else if (bmi >= 18.5 && bmi < 25) {
+                            feedback = "Healthy Weight";
+                        } else if (bmi >= 25 && bmi < 30) {
+                            feedback = "OverWeight";
+                        } else {
+                            feedback = "Obesity";
+                        }
+
+                        resultText.setText("Based on your Height and Weight your Body Mass Index(BMI) is " + String.format("%.2f", bmi) + "\n" +
+                                "You are in the Category of \n" +
+                                "'" + feedback.toUpperCase() + "'");
+
+                    } catch (Exception ex) {
+                        Toast.makeText(getContext(), "Please fill out all the fields", Toast.LENGTH_LONG).show();
+                    }
                 }
+            });
 
-                resultText.setText("Based on your Height and Weight your Body Mass Index(BMI) is "+ String.format("%.2f",bmi) +"\n"+
-                        "You are in the Category of \n"+
-                        "'" +feedback.toUpperCase()+ "'");
 
-            }
-        });
 
 
 
