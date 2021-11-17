@@ -27,12 +27,14 @@
         android:id="@+id/recipeDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/contact_list_text_size"
         android:text="@string/saladDesc" />
 
     <TextView
         android:id="@+id/recipeIng"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/contact_list_text_size"
         android:text="@string/salad_ing" />
 
 </LinearLayout>

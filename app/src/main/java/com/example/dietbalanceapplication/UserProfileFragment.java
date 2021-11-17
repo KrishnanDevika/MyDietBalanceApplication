@@ -88,7 +88,7 @@ public class UserProfileFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     try {
-                        resultText.setVisibility(View.VISIBLE);
+
                         double weight = Double.parseDouble(weightText.getText().toString());
                         double height = Double.parseDouble(heightText.getText().toString());
                         double heightInMeters = height / 100;
@@ -107,6 +107,7 @@ public class UserProfileFragment extends Fragment {
                             feedback = "Obesity";
                         }
 
+                        resultText.setVisibility(View.VISIBLE);
                         resultText.setText("Based on your Height and Weight your Body Mass Index(BMI) is " + String.format("%.2f", bmi) + "\n" +
                                 "You are in the Category of \n" +
                                 "'" + feedback.toUpperCase() + "'");

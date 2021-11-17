@@ -15,7 +15,6 @@
         android:paddingLeft="@dimen/layout_padding"
         android:paddingRight="@dimen/layout_padding"
         android:paddingTop="@dimen/layout_padding"
-
         android:columnCount="2"
         tools:context=".UserProfileFragment">
 
