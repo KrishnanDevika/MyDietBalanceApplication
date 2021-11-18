@@ -12,6 +12,11 @@ import com.example.dietbalanceapplication.R;
 
 import java.util.ArrayList;
 
+/**
+ * @author Devika Krishnan
+ * Date: Nov 6, 2021
+ * CustomRecyclerView Adapter for hosting recycler view
+ */
 public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHolder> {
     private ArrayList<FAQ> faqs;
 
@@ -43,6 +48,9 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHo
     }
 }
 
+/**
+ * ViewHolder to contains data to displayed on the Recycler view
+ */
 class CustomViewHolder extends RecyclerView.ViewHolder{
     protected TextView question;
     protected TextView answer;

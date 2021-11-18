@@ -13,7 +13,8 @@
     <color name="green_700">#387002</color>
     <color name="lime_200">#827717</color>
     <color name="lime_700">#524c00</color>
-    <color name="light_lime">#ffff89</color>
+    <color name="light_lime">#b2fab4</color>
+    <color name="lightlime">#ffff89</color>
 
 
 </resources>

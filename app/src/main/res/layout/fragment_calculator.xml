@@ -1,14 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CalculatorFragment">
+    android:background="@color/light_lime"
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding"
+        android:paddingTop="@dimen/layout_padding"
+        android:columnCount="2"
+        tools:context=".CalculatorFragment">
 
-</FrameLayout>
+
+        <Button
+            android:id="@+id/bmiButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:gravity="center"
+            android:padding="@dimen/layout_padding"
+            android:text="@string/bmiButtonText" />
+
+        <Button
+            android:id="@+id/calorieButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:gravity="center"
+            android:padding="@dimen/layout_padding"
+            android:text="@string/calorieButton" />
+
+        <Button
+            android:id="@+id/weightButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:gravity="center"
+            android:padding="@dimen/layout_padding"
+            android:text="@string/weightButton" />
+
+        <Button
+            android:id="@+id/pregnancyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:gravity="center"
+            android:padding="@dimen/layout_padding"
+            android:text="@string/pregnancyCalculator" />
+
+        <Button
+            android:id="@+id/feedingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:gravity="center"
+            android:padding="@dimen/layout_padding"
+            android:text="@string/feedingCalculator" />
+
+        <TextView
+            android:id="@+id/agetextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_title_size"
+            android:textColor="@color/black"
+            android:text="Age"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="@dimen/layout_padding"
+            android:background="@color/lime_200"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/heightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_title_size"
+            android:text="Height (cm)"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="@dimen/layout_padding"
+            android:background="@color/lime_200"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/weightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:textColor="@color/black"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_title_size"
+            android:text="Weight (kg)"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@color/lime_200"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/genderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:textColor="@color/black"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_title_size"
+            android:text="Gender"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/exerciseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:textColor="@color/black"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_title_size"
+            android:text="Exercise Level"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/exercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:text="Submit"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_columnSpan="2"
+            android:textStyle="bold"
+            android:textSize="@dimen/contact_title_size"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:padding="@dimen/layout_padding"
+            android:layout_margin="@dimen/layout_padding"
+            android:visibility="gone" />
+
+    </GridLayout>
+
+</ScrollView>

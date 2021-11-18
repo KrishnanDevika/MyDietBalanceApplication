@@ -66,6 +66,7 @@ public class FAQFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_f_a_q, container, false);
+        //list to add all the list item
         ArrayList<FAQ> faqs = new ArrayList<>();
         faqs.add(new FAQ("How important are fruit and veg?","To achieve a healthy diet, vegetables and fruit must be a vital feature to ensure the access to a mixture of vitamins and minerals that are abundant within them. Not only do fruit and veg provide a rich source of vitamins, minerals and antioxidants, they also serve as a source of energy, aid weight loss and can be an influential tool in the prevention of disease."));
         faqs.add(new FAQ("In what way is fibre healthy?","Fibre is an essential element for any balanced diet, its main purpose is the promotion of digestive health and the movement of the digestive system, but fibre also has many other health benefits. Prevention of heart disease, diabetes, weight gain, cancers and so on are all influenced by fibre, making it a necessary part of a healthy lifestyle."));
