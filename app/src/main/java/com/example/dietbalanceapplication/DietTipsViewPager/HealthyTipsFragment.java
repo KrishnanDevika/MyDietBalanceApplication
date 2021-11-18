@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.dietbalanceapplication.R;
 
@@ -61,6 +62,16 @@ public class HealthyTipsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_healthy_tips, container, false);
+        View view = inflater.inflate(R.layout.fragment_healthy_tips, container, false);
+        TextView tipsTextView = view.findViewById(R.id.tipsText);
+        TextView tipsDesc = view.findViewById(R.id.tipsDesc);
+
+        if(mParam1 != null){
+            tipsTextView.setText(mParam1);
+        }
+        if(mParam2 != null){
+            tipsDesc.setText(mParam2);
+        }
+        return view;
     }
 }

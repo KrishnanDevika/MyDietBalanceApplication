@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/layout_padding"
+    android:background="@color/light_lime"
     tools:context=".DietTipsViewPager.HealthyTipsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tipsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/layout_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/heading_title_size"
+        android:textStyle="italic"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tipsDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/layout_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/list_text_size"
+        android:text="TextView" />
+</LinearLayout>

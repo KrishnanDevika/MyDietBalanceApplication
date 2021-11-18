@@ -3,6 +3,7 @@ package com.example.dietbalanceapplication.DietTipsViewPager;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -62,7 +63,9 @@ public class DietTipsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_diet_tips, container, false);
-
+        ViewPager2 tipsViewPager = view.findViewById(R.id.tipsViewPager);
+        tipsViewPager.setAdapter(new CustomViewPagerAdapter(getActivity()));
+        tipsViewPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
         return view;
     }
 }
