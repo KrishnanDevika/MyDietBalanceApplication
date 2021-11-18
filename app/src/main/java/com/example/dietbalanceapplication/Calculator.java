@@ -1,8 +1,19 @@
 package com.example.dietbalanceapplication;
 
+/**
+ * @author Devika Krishnan
+ * Date : Nov 17, 2201
+ * This class does all the calorie calculation needed
+ */
 public class Calculator {
     public static String feedback;
 
+    /**
+     * This method will return BMI values of the person
+     * @param weight
+     * @param height
+     * @return bmi
+     */
     public static double bmiCalculation(double weight, double height){
         double bmi;
         double heightInMeters = height / 100;
@@ -21,6 +32,16 @@ public class Calculator {
         return bmi;
 
     }
+
+    /**
+     * This method will return calories needed for the body
+     * @param gen
+     * @param enteredAge
+     * @param weight
+     * @param height
+     * @param exerciseLevel
+     * @return calorieNeeded
+     */
     public static double calorieCalculation(String gen, int enteredAge, double weight, double height, String exerciseLevel){
         double bmr = 0;
         double caloriesNeeded;

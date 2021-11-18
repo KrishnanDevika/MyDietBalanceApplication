@@ -15,12 +15,22 @@ import com.example.dietbalanceapplication.R;
 
 import java.util.ArrayList;
 
+/**
+ * Created custom list view adapter that extends array adapter
+ */
 public class CustomContactListAdapter extends ArrayAdapter<Contacts> {
 
     public CustomContactListAdapter(@NonNull Context context, ArrayList<Contacts> listItems) {
         super(context,0, listItems);
     }
 
+    /**
+     * this method will place all the list items to the list view
+     * @param position
+     * @param convertView
+     * @param parent
+     * @return view
+     */
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

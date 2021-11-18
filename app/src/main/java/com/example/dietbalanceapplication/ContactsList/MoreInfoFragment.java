@@ -72,6 +72,7 @@ public class MoreInfoFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_more_info, container, false);
         ListView contactList = view.findViewById(R.id.contactList);
 
+        //List to add all the list items
         ArrayList<Contacts> contacts = new ArrayList<>();
         contacts.add(new Contacts(R.drawable.ic_baseline_location_on_24, "Location", "Diet Center Nearby"));
         contacts.add(new Contacts(R.drawable.ic_baseline_email_24, "Email", "aaradietcare@adc.com"));
@@ -85,6 +86,7 @@ public class MoreInfoFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 switch(position){
                     case 0:
+                        //Map Intents
                         Uri location = Uri.parse("geo:42.30615797210299, -82.97915163928572?&q=Diet+Center");
                         Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
                         try{
@@ -95,6 +97,7 @@ public class MoreInfoFragment extends Fragment {
                         }
                         break;
                     case 1:
+                        //Email Intent
                         String EmailAddress[] = {"aaramvarma@gmail.com"};
                         Intent emailIntent = new Intent(Intent.ACTION_SEND);
                         emailIntent.setData(Uri.parse("mailto:"));
@@ -108,6 +111,7 @@ public class MoreInfoFragment extends Fragment {
 
                         break;
                     case 2:
+                        //Phone Intent
                         Intent phoneIntent = new Intent(Intent.ACTION_DIAL,
                                 Uri.parse("tel:2292464536"));
                         try{
@@ -118,6 +122,7 @@ public class MoreInfoFragment extends Fragment {
                         }
                         break;
                     case 3:
+                        //SMS Intent
                         Intent smsIntent = new Intent(Intent.ACTION_SENDTO,
                                 Uri.parse("smsto:2292464536"));
                         try{
@@ -128,6 +133,7 @@ public class MoreInfoFragment extends Fragment {
                         }
                         break;
                     case 4:
+                        //Web Intent
                         Intent webIntent = new Intent(Intent.ACTION_VIEW,
                                 Uri.parse("https://www.facebook.com/Diet-Center-77735372982/"));
                         try{

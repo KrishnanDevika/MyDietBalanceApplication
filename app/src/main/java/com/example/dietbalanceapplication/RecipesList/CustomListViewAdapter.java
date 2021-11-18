@@ -15,11 +15,22 @@ import com.example.dietbalanceapplication.R;
 
 import java.util.ArrayList;
 
+/**
+ * @Author Devika Krishnan
+ * Created own Custom List View Adapter that extends Array Adapter
+ */
 public class CustomListViewAdapter extends ArrayAdapter<HealthyRecipes> {
     public CustomListViewAdapter(@NonNull Context context, ArrayList<HealthyRecipes> items) {
         super(context, 0, items);
     }
 
+    /**
+     * This method will place all the items to the list view
+     * @param position
+     * @param convertView
+     * @param parent
+     * @return view
+     */
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
