@@ -45,7 +45,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_tips"
-        android:name="com.example.dietbalanceapplication.DietTipsFragment"
+        android:name="com.example.dietbalanceapplication.DietTipsViewPager.DietTipsFragment"
         android:label="@string/fragment_diet_tips"
         tools:layout="@layout/fragment_diet_tips" />
     <fragment
