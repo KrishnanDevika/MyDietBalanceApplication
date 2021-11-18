@@ -112,45 +112,31 @@ public class CalculatorFragment extends Fragment {
         bmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                ageText.setVisibility(View.GONE);
+                age.setVisibility(View.GONE);
                 heightValue.setVisibility(View.VISIBLE);
                 heightText.setVisibility(View.VISIBLE);
                 weightValue.setVisibility(View.VISIBLE);
                 weightText.setVisibility(View.VISIBLE);
                 submitButton.setVisibility(View.VISIBLE);
-
+                genderText.setVisibility(View.GONE);
+                gender.setVisibility(View.GONE);
+                exerciseText.setVisibility(View.GONE);
+                exercise.setVisibility(View.GONE);
                 submitButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         try{
                             double weight = Double.parseDouble(weightValue.getText().toString());
                             double height = Double.parseDouble(heightValue.getText().toString());
-                            double heightInMeters = height / 100;
-                            double bmi;
-                            bmi = weight / (heightInMeters * heightInMeters);
-
-                            String feedback;
-
-                            if (bmi < 18.5) {
-                                feedback = "UnderWeight";
-                            } else if (bmi >= 18.5 && bmi < 25) {
-                                feedback = "Healthy Weight";
-                            } else if (bmi >= 25 && bmi < 30) {
-                                feedback = "OverWeight";
-                            } else {
-                                feedback = "Obesity";
-                            }
+                            double bmi = Calculator.bmiCalculation(weight, height);
                             result.setVisibility(View.VISIBLE);
-                            result.setText("BMI : " + String.format("%.2f", bmi) + "\n You are " + "'" +feedback + "'");
-
-
+                            result.setText("BMI : " + String.format("%.2f", bmi) + "\n You are " + "'" +Calculator.feedback + "'");
                         }catch (Exception e){
                             Toast.makeText(getContext(), "Please fill out all the fields", Toast.LENGTH_LONG).show();
                         }
-
-
                     }
                 });
-
             }
         });
 
@@ -179,45 +165,12 @@ public class CalculatorFragment extends Fragment {
                             double height = Double.parseDouble(heightValue.getText().toString());
                             String gen = gender.getSelectedItem().toString();
                             String exerciseLevel = exercise.getSelectedItem().toString();
-                            double bmr = 0;
-                            double caloriesNeeded;
-                            switch (gen){
-                                case "Male":
-                                    bmr = (10 * weight) + (6.25 * height) - ( 5 * enteredAge) + 5;
-                                    break;
-                                case "Female":
-                                    bmr = (10 * weight) + (6.25 * height) - ( 5 * enteredAge) - 161;
-                                    break;
-
-                            }
-
-                            switch (exerciseLevel){
-                                case "Little or no exercises":
-                                    caloriesNeeded = bmr * 1.2;
-                                    break;
-                                case "Light exercise or sports (1 -3) days/week":
-                                    caloriesNeeded = bmr * 1.375;
-                                    break;
-                                case "moderate exercise or sports (3 - 5) days/week":
-                                    caloriesNeeded = bmr * 1.55;
-                                    break;
-                                case "hard exercise or sports (6 - 7) days/week":
-                                    caloriesNeeded = bmr * 1.725;
-                                    break;
-                                case "very hard exercise or sports/physical job":
-                                    caloriesNeeded = bmr * 1.9;
-                                    break;
-                                default:
-                                    caloriesNeeded = 0;
-                            }
+                            double caloriesNeeded = Calculator.calorieCalculation(gen, enteredAge, weight, height,exerciseLevel);
                             result.setVisibility(View.VISIBLE);
                             result.setText(" The total number of calories you need in order to maintain your current weight is : " + Math.round(caloriesNeeded) + "cal");
-
-
                         }catch (Exception e){
                             Toast.makeText(getContext(), "Please fill out all the fields", Toast.LENGTH_LONG).show();
                         }
-
                     }
                 });
             }
@@ -236,6 +189,8 @@ public class CalculatorFragment extends Fragment {
                 exerciseText.setVisibility(View.VISIBLE);
                 exercise.setVisibility(View.VISIBLE);
                 submitButton.setVisibility(View.VISIBLE);
+                genderText.setVisibility(View.GONE);
+                gender.setVisibility(View.GONE);
 
                 submitButton.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -245,45 +200,17 @@ public class CalculatorFragment extends Fragment {
                             double weight = Double.parseDouble(weightValue.getText().toString());
                             double height = Double.parseDouble(heightValue.getText().toString());
                             String exerciseLevel = exercise.getSelectedItem().toString();
-                            double bmr = 0;
-                            double caloriesNeeded;
-
-                            bmr = (10 * weight) + (6.25 * height) - ( 5 * enteredAge) - 161;
-
-                            switch (exerciseLevel){
-                                case "Little or no exercises":
-                                    caloriesNeeded = bmr * 1.2;
-                                    break;
-                                case "Light exercise or sports (1 -3) days/week":
-                                    caloriesNeeded = bmr * 1.375;
-                                    break;
-                                case "moderate exercise or sports (3 - 5) days/week":
-                                    caloriesNeeded = bmr * 1.55;
-                                    break;
-                                case "hard exercise or sports (6 - 7) days/week":
-                                    caloriesNeeded = bmr * 1.725;
-                                    break;
-                                case "very hard exercise or sports/physical job":
-                                    caloriesNeeded = bmr * 1.9;
-                                    break;
-                                default:
-                                    caloriesNeeded = 0;
-                            }
+                            double caloriesNeeded = Calculator.calorieCalculation("Female", enteredAge, weight, height,exerciseLevel);
                             result.setVisibility(View.VISIBLE);
                             result.setText(" First Trimester : " + (Math.round(caloriesNeeded) + 85) +"cal\n"+
                                             " Second Trimester : " + (Math.round(caloriesNeeded) + 285) +"cal\n" +
                                             " Third Trimester : " + (Math.round(caloriesNeeded) + 475+"cal"));
 
-
                         }catch (Exception e){
                             Toast.makeText(getContext(), "Please fill out all the fields", Toast.LENGTH_LONG).show();
                         }
-
                     }
                 });
-
-
-
             }
         });
 
@@ -299,6 +226,8 @@ public class CalculatorFragment extends Fragment {
                 exerciseText.setVisibility(View.VISIBLE);
                 exercise.setVisibility(View.VISIBLE);
                 submitButton.setVisibility(View.VISIBLE);
+                genderText.setVisibility(View.GONE);
+                gender.setVisibility(View.GONE);
 
                 submitButton.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -308,42 +237,14 @@ public class CalculatorFragment extends Fragment {
                             double weight = Double.parseDouble(weightValue.getText().toString());
                             double height = Double.parseDouble(heightValue.getText().toString());
                             String exerciseLevel = exercise.getSelectedItem().toString();
-                            double bmr = 0;
-                            double caloriesNeeded;
-
-                            bmr = (10 * weight) + (6.25 * height) - ( 5 * enteredAge) - 161;
-
-                            switch (exerciseLevel){
-                                case "Little or no exercises":
-                                    caloriesNeeded = bmr * 1.2;
-                                    break;
-                                case "Light exercise or sports (1 -3) days/week":
-                                    caloriesNeeded = bmr * 1.375;
-                                    break;
-                                case "moderate exercise or sports (3 - 5) days/week":
-                                    caloriesNeeded = bmr * 1.55;
-                                    break;
-                                case "hard exercise or sports (6 - 7) days/week":
-                                    caloriesNeeded = bmr * 1.725;
-                                    break;
-                                case "very hard exercise or sports/physical job":
-                                    caloriesNeeded = bmr * 1.9;
-                                    break;
-                                default:
-                                    caloriesNeeded = 0;
-                            }
+                            double caloriesNeeded = Calculator.calorieCalculation("Female", enteredAge, weight, height,exerciseLevel);
                             result.setVisibility(View.VISIBLE);
                             result.setText(" Daily you need  : " + (Math.round(caloriesNeeded) + 400) +"cal");
-
-
                         }catch (Exception e){
                             Toast.makeText(getContext(), "Please fill out all the fields", Toast.LENGTH_LONG).show();
                         }
-
                     }
                 });
-
-
             }
         });
 
@@ -353,38 +254,32 @@ public class CalculatorFragment extends Fragment {
                 heightValue.setVisibility(View.VISIBLE);
                 heightText.setVisibility(View.VISIBLE);
                 submitButton.setVisibility(View.VISIBLE);
-
-
+                ageText.setVisibility(View.GONE);
+                age.setVisibility(View.GONE);
+                weightValue.setVisibility(View.GONE);
+                weightText.setVisibility(View.GONE);
+                genderText.setVisibility(View.GONE);
+                gender.setVisibility(View.GONE);
+                exerciseText.setVisibility(View.GONE);
+                exercise.setVisibility(View.GONE);
                 submitButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         try{
                             double height = Double.parseDouble(heightValue.getText().toString());
                             double heightInMeters = height / 100;
-
                             double weightFrom, weightTo;
                             weightFrom = 18.5 * (heightInMeters * heightInMeters);
                             weightTo = 25  * (heightInMeters * heightInMeters);
-
                             result.setVisibility(View.VISIBLE);
                             result.setText(" Your ideal Weight should be between  "+ Math.round(weightFrom) +"Kg - " +Math.round(weightTo) +"Kg");
-
-
                         }catch (Exception e){
                             Toast.makeText(getContext(), "Please fill out all the fields", Toast.LENGTH_LONG).show();
                         }
-
                     }
                 });
-
-
-
-
-
             }
         });
         return view;
-
-
     }
 }

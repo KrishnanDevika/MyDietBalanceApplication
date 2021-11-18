@@ -91,26 +91,11 @@ public class UserProfileFragment extends Fragment {
 
                         double weight = Double.parseDouble(weightText.getText().toString());
                         double height = Double.parseDouble(heightText.getText().toString());
-                        double heightInMeters = height / 100;
-                        double bmi;
-                        bmi = weight / (heightInMeters * heightInMeters);
-
-                        String feedback;
-
-                        if (bmi < 18.5) {
-                            feedback = "UnderWeight";
-                        } else if (bmi >= 18.5 && bmi < 25) {
-                            feedback = "Healthy Weight";
-                        } else if (bmi >= 25 && bmi < 30) {
-                            feedback = "OverWeight";
-                        } else {
-                            feedback = "Obesity";
-                        }
-
+                        double bmi = Calculator.bmiCalculation(weight, height);
                         resultText.setVisibility(View.VISIBLE);
                         resultText.setText("Based on your Height and Weight your Body Mass Index(BMI) is " + String.format("%.2f", bmi) + "\n" +
                                 "You are in the Category of \n" +
-                                "'" + feedback.toUpperCase() + "'");
+                                "'" + Calculator.feedback.toUpperCase() + "'");
 
                     } catch (Exception ex) {
                         Toast.makeText(getContext(), "Please fill out all the fields", Toast.LENGTH_LONG).show();
