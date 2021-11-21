@@ -1,40 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="@dimen/layout_padding"
-    tools:context=".SampleHealthyRecipes.EggsFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/titleTV"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/eggs"
-        android:textAlignment="center"
-        android:textSize="@dimen/title_size" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
+        android:orientation="vertical"
         android:padding="@dimen/layout_padding"
-        android:src="@drawable/eggs" />
+        tools:context=".SampleHealthyRecipes.EggsFragment">
 
-    <TextView
-        android:id="@+id/recipeDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/contact_list_text_size"
-        android:text="@string/eggDesc" />
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eggs"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size" />
 
-    <TextView
-        android:id="@+id/recipeIng"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/contact_list_text_size"
-        android:text="@string/egg_ing" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/layout_padding"
+            android:src="@drawable/eggs" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/recipeDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/contact_list_text_size"
+            android:text="@string/eggDesc" />
+
+        <TextView
+            android:id="@+id/recipeIng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/contact_list_text_size"
+            android:text="@string/egg_ing" />
+
+    </LinearLayout>
+
+</ScrollView>
