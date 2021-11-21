@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.dietbalanceapplication.SettingsList.CustomSettingsListAdapter;
 import com.example.dietbalanceapplication.SettingsList.SettingOptions;
@@ -104,6 +105,7 @@ public class DetailsFragment extends Fragment {
             settingOptions.add(new SettingOptions(R.drawable.height, "Height", "" ));
             settingOptions.add(new SettingOptions(R.drawable.gender, "Gender", ""));
             settingOptions.add(new SettingOptions(R.drawable.ic_baseline_cake_24, "Your age", ""));
+            Toast.makeText(getContext(), "Please fill the User Profile section", Toast.LENGTH_SHORT).show();
         }
 
         detailsList.setAdapter(new CustomSettingsListAdapter(getContext(), settingOptions));

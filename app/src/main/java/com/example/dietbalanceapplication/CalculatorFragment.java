@@ -117,6 +117,20 @@ public class CalculatorFragment extends Fragment {
         data.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise.setBackgroundColor(getResources().getColor(R.color.lime_200));
         exercise.setAdapter(data);
+        if(heightUnit.equalsIgnoreCase("cm")) {
+            heightValue.setHint("Height in cm");
+        }
+        if(heightUnit.equalsIgnoreCase("inches")){
+            heightValue.setHint("Height in inches");
+        }
+
+        if(weightUnit.equalsIgnoreCase("kg")){
+            weightValue.setHint("Weight in kg");
+        }
+
+        if(weightUnit.equalsIgnoreCase("lbs")){
+            weightValue.setHint("Weight in pounds");
+        }
 
         bmi.setOnClickListener(new View.OnClickListener() {
             @Override

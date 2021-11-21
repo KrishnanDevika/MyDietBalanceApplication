@@ -96,6 +96,20 @@ public class UserProfileFragment extends Fragment {
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         String heightUnit =sharedPreferences.getString("heightUnits", "cm");
         String weightUnit = sharedPreferences.getString("weightUnits", "kg");
+        if(heightUnit.equalsIgnoreCase("cm")) {
+            heightText.setHint("Height in cm");
+        }
+        if(heightUnit.equalsIgnoreCase("inches")){
+            heightText.setHint("Height in inches");
+        }
+
+        if(weightUnit.equalsIgnoreCase("kg")){
+           weightText.setHint("Weight in kg");
+        }
+
+        if(weightUnit.equalsIgnoreCase("lbs")){
+            weightText.setHint("Weight in pounds");
+        }
 
             Button submitButton = view.findViewById(R.id.submitButton);
             submitButton.setOnClickListener(new View.OnClickListener() {

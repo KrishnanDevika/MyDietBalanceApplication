@@ -1,5 +1,7 @@
 package com.example.dietbalanceapplication.SettingsList;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.dietbalanceapplication.R;
 
@@ -70,8 +73,12 @@ public class SettingsFragment extends Fragment {
         ListView settingsList = view.findViewById(R.id.settingsList);
 
         ArrayList<SettingOptions> settingOptions = new ArrayList<>();
-        settingOptions.add(new SettingOptions( R.drawable.ic_baseline_person_outline_24,"Personal Details", "Change Weight Height etc."));
+        settingOptions.add(new SettingOptions( R.drawable.ic_baseline_person_outline_24,"Personal Details", "Weight Height etc."));
         settingOptions.add(new SettingOptions(R.drawable.scale, "Units", "Units Preferences"));
+        settingOptions.add(new SettingOptions(R.drawable.ic_baseline_share_24, "Share App", ""));
+        settingOptions.add(new SettingOptions(R.drawable.ic_baseline_help_24, "Help", "Frequently asked Questions"));
+        settingOptions.add(new SettingOptions(R.drawable.ic_baseline_contact_mail_24, "Contact Us", ""));
+
 
         settingsList.setAdapter(new CustomSettingsListAdapter(getContext(), settingOptions));
 
@@ -85,6 +92,27 @@ public class SettingsFragment extends Fragment {
                     case 1:
                         Navigation.findNavController(view).navigate(R.id.nav_units);
                         break;
+                    case 2:
+                        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+                        sharingIntent.setType("text/plain");
+                        sharingIntent.putExtra(Intent.EXTRA_TEXT,"Help you to calculate the calories needed to maintain your Health");
+                        startActivity(Intent.createChooser(sharingIntent, "Share via"));
+                        break;
+                    case 3:
+                        Navigation.findNavController(view).navigate(R.id.nav_faq);
+                        break;
+                    case 4:
+                        String EmailAddress[] = {"aaramvarma@gmail.com"};
+                        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                        emailIntent.setType("message/rfc822");
+                        emailIntent.putExtra(Intent.EXTRA_EMAIL  ,EmailAddress);
+                        try {
+                            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
+                        } catch (android.content.ActivityNotFoundException ex) {
+
+                        }
+                        break;
+
                 }
             }
         });
