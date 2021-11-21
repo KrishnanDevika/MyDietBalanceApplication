@@ -1,33 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="@dimen/layout_padding"
-    android:background="@color/light_lime"
-    tools:context=".DietTipsViewPager.HealthyTipsFragment">
+    android:background="@color/light_lime">
 
-
-    <TextView
-        android:id="@+id/tipsText"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:padding="@dimen/layout_padding"
-        android:textColor="@color/black"
-        android:textSize="@dimen/heading_title_size"
-        android:textStyle="italic"
-        android:text="TextView" />
+        android:orientation="vertical"
+        android:layout_margin="@dimen/layout_padding"
+        tools:context=".DietTipsViewPager.HealthyTipsFragment">
 
-    <TextView
-        android:id="@+id/tipsDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:padding="@dimen/layout_padding"
-        android:textColor="@color/black"
-        android:textSize="@dimen/list_text_size"
-        android:text="TextView" />
-</LinearLayout>
+
+        <TextView
+            android:id="@+id/tipsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/top_margin"
+            android:layout_marginBottom="@dimen/inner_layout_padding"
+            android:layout_marginLeft="@dimen/inner_layout_padding"
+            android:layout_marginRight="@dimen/inner_layout_padding"
+            android:padding="@dimen/inner_layout_padding"
+            android:background="@color/green_500"
+            android:textColor="@color/black"
+            android:textSize="@dimen/heading_title_size"
+            android:textStyle="italic"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tipsDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/layout_padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/list_text_size"
+            android:text="TextView" />
+    </LinearLayout>
+
+</ScrollView>

@@ -30,22 +30,16 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
                 return HealthyTipsFragment.newInstance("Eat protein at every Meal", "\t\t\t\tProtein is the ultimate fill-me-up food -- it's more satisfying than carbs or fats and keeps you feeling full for longer. So be sure to incorporate healthy proteins like seafood, lean meat, egg whites, yogurt, cheese, soy, nuts, or beans into your meals and snacks.");
 
             case 4:
-                return HealthyTipsFragment.newInstance("Snack Well", "\t\t\t\tMost people can eat small snacks right before and during exercise. It’s important to do what feels best for you. Good snack options include energy bars, yogurt, low-fat granola bars and peanut butter sandwiches.");
-
-            case 5:
                 return HealthyTipsFragment.newInstance("Include Fibre in your Diet", "\t\t\t\tFiber aids digestion, prevents constipation, and lowers cholesterol -- and can help with weight loss. Increasing your intake is as easy as adding beans to your salad, eating oats for breakfast or snacking on fiber-rich nuts and seeds.");
 
-            case 6:
+            case 5:
                 return HealthyTipsFragment.newInstance("Get Enough sleep", " \t\t\t\tGetting enough sleep may make you feel rested and full and keep you from doing unnecessary snacking.");
 
-            case 7:
+            case 6:
                 return HealthyTipsFragment.newInstance("Ditch Added Sugar", "\t\t\t\tAdded sugar, especially from sugary drinks, is a major reason for unhealthy weight gain and health problems like diabetes and heart disease. Cutting out foods high in added sugars is a great way to lose excess weight.");
 
-            case 8:
+            case 7:
                 return HealthyTipsFragment.newInstance("Walk your way to health", "\t\t\t\tMany people believe they must adopt a rigorous exercise routine to jumpstart weight loss.While different types of activity are important when you’re attempting to get in shape, walking is an excellent and easy way to burn calories.");
-
-            case 9:
-                return HealthyTipsFragment.newInstance("Eat Whole Foods", "\t\t\t\tChoose whole-grain foods, such as whole-wheat bread, rye bread, brown rice, popcorn, oatmeal and whole-grain cereal.");
 
             default:
                 return HealthyTipsFragment.newInstance("Fragment Not Found", "404 Error");
@@ -55,6 +49,6 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 10;
+        return 8;
     }
 }
