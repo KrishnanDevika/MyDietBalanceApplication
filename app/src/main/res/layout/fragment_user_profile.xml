@@ -96,7 +96,6 @@
             android:background="@color/lime_200"
             android:padding="@dimen/layout_padding"
             android:textColor="@color/white"
-            android:hint="Height in cm"
             android:ems="10"
             android:inputType="number" />
 
@@ -119,7 +118,6 @@
             android:background="@color/lime_200"
             android:textColor="@color/white"
             android:padding="@dimen/layout_padding"
-            android:hint="Weight in Kg"
             android:inputType="number" />
 
         <TextView

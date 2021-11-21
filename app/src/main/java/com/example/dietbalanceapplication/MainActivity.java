@@ -62,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         switch (id){
+
+            case R.id.action_settings:
+                Navigation.findNavController(this, R.id.nav_host_fragment_content_main).navigate(R.id.nav_settings);
+                break;
             case R.id.action_faq:
                  Navigation.findNavController(this,R.id.nav_host_fragment_content_main).navigate(R.id.nav_faq);
                  break;

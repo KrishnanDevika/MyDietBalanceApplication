@@ -1,9 +1,12 @@
 package com.example.dietbalanceapplication;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +32,12 @@ public class UserProfileFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    SharedPreferences sharedPreferences;
+
+    public static String getWeight;
+    public static String getHeight;
+    public static String gen;
+    public static String yourAge;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -71,6 +80,7 @@ public class UserProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_user_profile, container, false);
         Spinner genderSpinner = view.findViewById(R.id.genderSelector);
+        EditText ageText = view.findViewById(R.id.agetEditTextNumber);
         EditText weightText = view.findViewById(R.id.weightEditText);
         EditText heightText = view.findViewById(R.id.heightEditText);
         ArrayList<String> genders = new ArrayList<>();
@@ -83,19 +93,44 @@ public class UserProfileFragment extends Fragment {
         genderSpinner.setAdapter(dataAdapter);
         TextView resultText = view.findViewById(R.id.feedbackText);
 
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String heightUnit =sharedPreferences.getString("heightUnits", "cm");
+        String weightUnit = sharedPreferences.getString("weightUnits", "kg");
+
             Button submitButton = view.findViewById(R.id.submitButton);
             submitButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     try {
 
+                        double bmi = 0;
                         double weight = Double.parseDouble(weightText.getText().toString());
                         double height = Double.parseDouble(heightText.getText().toString());
-                        double bmi = Calculator.bmiCalculation(weight, height);
+                        if(heightUnit.equalsIgnoreCase("cm")) {
+                             height = height;
+                        }
+                        if(heightUnit.equalsIgnoreCase("inches")){
+                            height = height * 2.54;
+                        }
+
+                        if(weightUnit.equalsIgnoreCase("kg")){
+                           weight = weight;
+                        }
+
+                        if(weightUnit.equalsIgnoreCase("lbs")){
+                            weight = weight / 2.205;
+                        }
+                        bmi = Calculator.bmiCalculation(weight, height);
                         resultText.setVisibility(View.VISIBLE);
                         resultText.setText("Based on your Height and Weight your Body Mass Index(BMI) is " + String.format("%.2f", bmi) + "\n" +
                                 "You are in the Category of \n" +
                                 "'" + Calculator.feedback.toUpperCase() + "'");
+
+                        getWeight = weightText.getText().toString();
+                        getHeight = heightText.getText().toString();
+                        gen = genderSpinner.getSelectedItem().toString();
+                        yourAge = ageText.getText().toString();
+
 
                     } catch (Exception ex) {
                         Toast.makeText(getContext(), "Please fill out all the fields", Toast.LENGTH_LONG).show();

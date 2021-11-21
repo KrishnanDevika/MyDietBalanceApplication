@@ -1,0 +1,22 @@
+<resources>
+
+    <string-array name="height_unit_entries">
+        <item>cm</item>
+        <item>inches</item>
+    </string-array>
+
+    <string-array name="height_unit_values">
+        <item>cm</item>
+        <item>inches</item>
+    </string-array>
+
+    <string-array name="weight_unit_entries">
+        <item>kg</item>
+        <item>lbs</item>
+    </string-array>
+
+    <string-array name="weight_unit_values">
+        <item>kg</item>
+        <item>lbs</item>
+    </string-array>
+</resources>
