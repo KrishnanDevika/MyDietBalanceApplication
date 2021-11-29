@@ -1,44 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/green_700"
-    android:orientation="horizontal">
+    app:cardBackgroundColor="@color/green_700"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
 
-    <ImageView
-        android:id="@+id/contact_icon"
-        android:layout_width="@dimen/contact_list_icon_width"
-        android:layout_height="@dimen/contact_list_icon_height"
-        android:layout_gravity="center"
-        android:padding="@dimen/layout_padding"
-        android:layout_margin="@dimen/layout_padding"
-        app:srcCompat="@drawable/diet" />
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_margin="@dimen/layout_padding"
-        android:background="@color/light_lime"
-        android:padding="@dimen/inner_layout_padding">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/contact_mode"
+
+        <ImageView
+            android:id="@+id/contact_icon"
+            android:layout_width="@dimen/contact_list_icon_width"
+            android:layout_height="@dimen/contact_list_icon_height"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_baseline_location_on_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layoutContact"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="@dimen/contact_title_size" />
+            android:layout_height="match_parent"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/light_lime"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/contact_icon"
+            app:layout_constraintEnd_toEndOf="@+id/contact_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/contact_icon">
 
-        <TextView
-            android:id="@+id/contact_desc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/contact_list_text_size"
-            android:textColor="@color/black"
-            android:textStyle="italic" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/contact_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_padding"
+                android:text="contactMode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/contact_title_size"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/contact_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_padding"
+                android:paddingLeft="10dp"
+                android:paddingTop="0dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="contactDesc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/contact_list_text_size"
+                android:textStyle="italic" />
+        </LinearLayout>
 
-</LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
