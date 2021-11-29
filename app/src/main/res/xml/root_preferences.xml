@@ -1,0 +1,16 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="kg"
+        android:entries="@array/weight_unit_entries"
+        android:entryValues="@array/weight_unit_values"
+        android:key="weightUnits"
+        android:title="Weight Units"
+        android:summary="Please select the Weight unit you wish to choose"/>
+    <ListPreference
+        android:defaultValue="cm"
+        android:entries="@array/height_unit_entries"
+        android:entryValues="@array/height_unit_values"
+        android:key="heightUnits"
+        android:title="Height Units"
+        android:summary="Please select the Height unit  you wish to choose"/>
+</PreferenceScreen>

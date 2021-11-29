@@ -95,7 +95,7 @@
             android:layout_marginBottom="@dimen/layout_padding"
             android:padding="@dimen/layout_padding"
             android:textSize="@dimen/contact_title_size"
-            android:text="Height (cm)"
+            android:text="Height"
             android:visibility="gone" />
 
         <EditText
@@ -117,7 +117,7 @@
             android:textColor="@color/black"
             android:padding="@dimen/layout_padding"
             android:textSize="@dimen/contact_title_size"
-            android:text="Weight (kg)"
+            android:text="Weight"
             android:visibility="gone" />
 
         <EditText

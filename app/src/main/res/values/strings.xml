@@ -46,6 +46,8 @@
     <string name="DieticianSocial">Social Media</string>
     <string name="faqTitle">Frequently Asked Question</string>
     <string name="faqMenu">FAQ</string>
+    <string name="shareMenu">Share app</string>
+    <string name="contactMenu">Contact us</string>
     <string name="aboutDiet">It is an application that helps users with various dietary plans. This app will help the users maintain a healthy diet. This will helps users to follow proper diet and keep count on their calorie’s intake. This will help users to lose weight, stay healthy and stronger.</string>
     <string name="dietDesc">\t\tEating a healthy, balanced diet is one of the most important things you can do to protect your health. It is not about strict limitations, staying unrealistically thin, or depriving yourself of the foods you love. Rather, it’s about feeling great, having more energy, improving your health, and boosting your mood.Healthy lifestyle is gaining popularity day by day in this modern times.</string>
 
@@ -54,5 +56,19 @@
     <string name="pregnancyCalculator">Pregnancy Calorie Calculator</string>
     <string name="feedingCalculator">BreastFeeding Calorie Calculator</string>
     <string name="weightButton">Ideal Weight</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 </resources>

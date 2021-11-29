@@ -1,8 +1,10 @@
 package com.example.dietbalanceapplication;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,6 +29,8 @@ public class CalculatorFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    SharedPreferences sharedPreferences;
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -68,6 +72,11 @@ public class CalculatorFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_calculator, container, false);
+
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String heightUnit =sharedPreferences.getString("heightUnits", "cm");
+        String weightUnit = sharedPreferences.getString("weightUnits", "kg");
+
         Button bmi = view.findViewById(R.id.bmiButton);
         Button calorieCalc = view.findViewById(R.id.calorieButton);
         Button pregnancyCalorie = view.findViewById(R.id.pregnancyButton);
@@ -108,6 +117,20 @@ public class CalculatorFragment extends Fragment {
         data.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise.setBackgroundColor(getResources().getColor(R.color.lime_200));
         exercise.setAdapter(data);
+        if(heightUnit.equalsIgnoreCase("cm")) {
+            heightValue.setHint("Height in cm");
+        }
+        if(heightUnit.equalsIgnoreCase("inches")){
+            heightValue.setHint("Height in inches");
+        }
+
+        if(weightUnit.equalsIgnoreCase("kg")){
+            weightValue.setHint("Weight in kg");
+        }
+
+        if(weightUnit.equalsIgnoreCase("lbs")){
+            weightValue.setHint("Weight in pounds");
+        }
 
         bmi.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,6 +152,20 @@ public class CalculatorFragment extends Fragment {
                         try{
                             double weight = Double.parseDouble(weightValue.getText().toString());
                             double height = Double.parseDouble(heightValue.getText().toString());
+                            if(heightUnit.equalsIgnoreCase("cm")) {
+                                height = height;
+                            }
+                            if(heightUnit.equalsIgnoreCase("inches")){
+                                height = height * 2.54;
+                            }
+
+                            if(weightUnit.equalsIgnoreCase("kg")){
+                                weight = weight;
+                            }
+
+                            if(weightUnit.equalsIgnoreCase("lbs")){
+                                weight = weight / 2.205;
+                            }
                             double bmi = Calculator.bmiCalculation(weight, height);
                             result.setVisibility(View.VISIBLE);
                             result.setText("BMI : " + String.format("%.2f", bmi) + "\n You are " + "'" +Calculator.feedback + "'");
@@ -163,6 +200,20 @@ public class CalculatorFragment extends Fragment {
                             int enteredAge = Integer.parseInt(age.getText().toString());
                             double weight = Double.parseDouble(weightValue.getText().toString());
                             double height = Double.parseDouble(heightValue.getText().toString());
+                            if(heightUnit.equalsIgnoreCase("cm")) {
+                                height = height;
+                            }
+                            if(heightUnit.equalsIgnoreCase("inches")){
+                                height = height * 2.54;
+                            }
+
+                            if(weightUnit.equalsIgnoreCase("kg")){
+                                weight = weight;
+                            }
+
+                            if(weightUnit.equalsIgnoreCase("lbs")){
+                                weight = weight / 2.205;
+                            }
                             String gen = gender.getSelectedItem().toString();
                             String exerciseLevel = exercise.getSelectedItem().toString();
                             double caloriesNeeded = Calculator.calorieCalculation(gen, enteredAge, weight, height,exerciseLevel);
@@ -199,6 +250,20 @@ public class CalculatorFragment extends Fragment {
                             int enteredAge = Integer.parseInt(age.getText().toString());
                             double weight = Double.parseDouble(weightValue.getText().toString());
                             double height = Double.parseDouble(heightValue.getText().toString());
+                            if(heightUnit.equalsIgnoreCase("cm")) {
+                                height = height;
+                            }
+                            if(heightUnit.equalsIgnoreCase("inches")){
+                                height = height * 2.54;
+                            }
+
+                            if(weightUnit.equalsIgnoreCase("kg")){
+                                weight = weight;
+                            }
+
+                            if(weightUnit.equalsIgnoreCase("lbs")){
+                                weight = weight / 2.205;
+                            }
                             String exerciseLevel = exercise.getSelectedItem().toString();
                             double caloriesNeeded = Calculator.calorieCalculation("Female", enteredAge, weight, height,exerciseLevel);
                             result.setVisibility(View.VISIBLE);
@@ -236,6 +301,20 @@ public class CalculatorFragment extends Fragment {
                             int enteredAge = Integer.parseInt(age.getText().toString());
                             double weight = Double.parseDouble(weightValue.getText().toString());
                             double height = Double.parseDouble(heightValue.getText().toString());
+                            if(heightUnit.equalsIgnoreCase("cm")) {
+                                height = height;
+                            }
+                            if(heightUnit.equalsIgnoreCase("inches")){
+                                height = height * 2.54;
+                            }
+
+                            if(weightUnit.equalsIgnoreCase("kg")){
+                                weight = weight;
+                            }
+
+                            if(weightUnit.equalsIgnoreCase("lbs")){
+                                weight = weight / 2.205;
+                            }
                             String exerciseLevel = exercise.getSelectedItem().toString();
                             double caloriesNeeded = Calculator.calorieCalculation("Female", enteredAge, weight, height,exerciseLevel);
                             result.setVisibility(View.VISIBLE);
@@ -267,7 +346,15 @@ public class CalculatorFragment extends Fragment {
                     public void onClick(View view) {
                         try{
                             double height = Double.parseDouble(heightValue.getText().toString());
+
+                            if(heightUnit.equalsIgnoreCase("cm")) {
+                                height = height;
+                            }
+                            if(heightUnit.equalsIgnoreCase("inches")){
+                                height = height * 2.54;
+                            }
                             double heightInMeters = height / 100;
+
                             double weightFrom, weightTo;
                             weightFrom = 18.5 * (heightInMeters * heightInMeters);
                             weightTo = 25  * (heightInMeters * heightInMeters);
