@@ -3,22 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/light_lime">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="@dimen/layout_padding"
+        android:layout_margin="@dimen/layout_padding"
         tools:context=".SampleHealthyRecipes.OmeletFragment">
 
-        <TextView
-            android:id="@+id/titleTV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/omelet"
-            android:textAlignment="center"
-            android:textSize="@dimen/title_size" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -34,14 +29,213 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"
             android:text="@string/omeletDesc" />
+
+        <TextView
+            android:id="@+id/nutriFacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nutrition"
+            android:layout_margin="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:textColor="@color/green_700" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/inner_layout_padding"
+            android:background="@color/lightlime">
+            <TextView
+                android:id="@+id/calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/contact_list_text_size"
+                android:text="@string/omeletCalorie" />
+
+            <TextView
+                android:id="@+id/protein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/contact_list_text_size"
+                android:text="@string/proteinOmelet" />
+
+            <TextView
+                android:id="@+id/carbo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/carboOmelet"
+                android:textSize="@dimen/contact_list_text_size"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/fat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fatOmelet"
+                android:textSize="@dimen/contact_list_text_size"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/cholesterol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cholesterolOmelet"
+                android:textSize="@dimen/contact_list_text_size"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/sodium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sodiumOmelet"
+                android:textSize="@dimen/contact_list_text_size"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/recipeIng"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/avocado_ing"
+            android:layout_margin="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:textColor="@color/green_700"/>
+
+        <TextView
+            android:id="@+id/ing1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/omelet_ing1"
             android:textSize="@dimen/contact_list_text_size"
-            android:text="@string/omelet_ing" />
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/omelet_ing2"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/omelet_ing3"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/omelet_ing4"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/omelet_ing5"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/omelet_ing6"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/omelet_ing7"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/omelet_ing8"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/ing9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/omelet_ing9"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/ing10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/omelet_ing10"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/directions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/directions"
+            android:layout_margin="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:textColor="@color/green_700"/>
+
+        <TextView
+            android:id="@+id/step1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/OmeletStep1"
+            android:layout_margin="@dimen/layout_padding"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/step2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/OmeletStep2"
+            android:layout_margin="@dimen/layout_padding"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/step3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/OmeletStep3"
+            android:layout_margin="@dimen/layout_padding"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/stp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/OmeletStep4"
+            android:layout_margin="@dimen/layout_padding"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
