@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.dietbalanceapplication.R;
@@ -22,10 +23,12 @@ public class HealthyTipsFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private static final String ARG_PARAM3 = "param3";
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private int mParam3;
 
     public HealthyTipsFragment() {
         // Required empty public constructor
@@ -40,11 +43,12 @@ public class HealthyTipsFragment extends Fragment {
      * @return A new instance of fragment HealthyTipsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static HealthyTipsFragment newInstance(String param1, String param2) {
+    public static HealthyTipsFragment newInstance(String param1, String param2, int param3) {
         HealthyTipsFragment fragment = new HealthyTipsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
+        args.putInt(ARG_PARAM3, param3);
         fragment.setArguments(args);
         return fragment;
     }
@@ -55,6 +59,7 @@ public class HealthyTipsFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+            mParam3 = getArguments().getInt(ARG_PARAM3);
         }
     }
 
@@ -65,12 +70,17 @@ public class HealthyTipsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_healthy_tips, container, false);
         TextView tipsTextView = view.findViewById(R.id.tipsText);
         TextView tipsDesc = view.findViewById(R.id.tipsDesc);
+        ImageView tipImage = view.findViewById(R.id.tipsImage);
 
         if(mParam1 != null){
             tipsTextView.setText(mParam1);
         }
         if(mParam2 != null){
             tipsDesc.setText(mParam2);
+        }
+
+        if(mParam3 != 0){
+            tipImage.setImageResource(mParam3);
         }
         return view;
     }
