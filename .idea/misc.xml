@@ -46,6 +46,7 @@
         <entry key="app/src/main/res/layout/fragment_calculator.xml" value="0.43072916666666666" />
         <entry key="app/src/main/res/layout/fragment_diet_tips.xml" value="0.43072916666666666" />
         <entry key="app/src/main/res/layout/fragment_healthy_tips.xml" value="0.43072916666666666" />
+        <entry key="app/src/main/res/layout/fragment_user_profile.xml" value="0.43072916666666666" />
         <entry key="app/src/main/res/xml/root_preferences.xml" value="0.43072916666666666" />
       </map>
     </option>

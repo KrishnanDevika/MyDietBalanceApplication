@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -137,8 +139,10 @@ public class UserProfileFragment extends Fragment {
                         bmi = Calculator.bmiCalculation(weight, height);
                         resultText.setVisibility(View.VISIBLE);
                         resultText.setText("Based on your Height and Weight your Body Mass Index(BMI) is " + String.format("%.2f", bmi) + "\n" +
-                                "You are in the Category of \n" +
+                                "Category : " +
                                 "'" + Calculator.feedback.toUpperCase() + "'");
+                        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.image_animation);
+                        resultText.startAnimation(animation);
 
                         getWeight = weightText.getText().toString();
                         getHeight = heightText.getText().toString();
