@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.provider.AlarmClock;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -79,6 +80,7 @@ public class MoreInfoFragment extends Fragment {
         contacts.add(new Contacts(R.drawable.ic_baseline_call_24, "Call", "+1 229(246)4536"));
         contacts.add(new Contacts(R.drawable.ic_baseline_message_24, "SMS", "+1 229(246)4536"));
         contacts.add(new Contacts(R.drawable.ic_baseline_facebook_24, "Follow us", "https://www.facebook.com/"));
+        contacts.add(new Contacts(R.drawable.ic_baseline_timer_24, "Set Alarm", "Time for Physical Exercise"));
 
         contactList.setAdapter(new CustomContactListAdapter(getContext(), contacts));
         contactList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -143,6 +145,15 @@ public class MoreInfoFragment extends Fragment {
                             Toast.makeText(getContext(),"No Apps found",Toast.LENGTH_LONG).show();
                         }
                         break;
+
+                    case 5:
+                        Intent clockIntent = new Intent(AlarmClock.ACTION_SET_ALARM);
+                        try{
+                            startActivity(clockIntent);
+
+                        }catch(Exception e){
+                            Toast.makeText(getContext(),"No Apps found",Toast.LENGTH_LONG).show();
+                        }
                 }
 
             }
