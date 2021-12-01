@@ -7,7 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.dietbalanceapplication.R;
@@ -82,6 +85,11 @@ public class HealthyTipsFragment extends Fragment {
         if(mParam3 != 0){
             tipImage.setImageResource(mParam3);
         }
+
+        LinearLayout layout = view.findViewById(R.id.dietContent);
+        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.content_animation);
+        layout.startAnimation(animation);
+
         return view;
     }
 }
