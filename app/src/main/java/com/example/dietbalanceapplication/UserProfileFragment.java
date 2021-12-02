@@ -90,7 +90,7 @@ public class UserProfileFragment extends Fragment {
         genders.add("Male");
         genders.add("Female");
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getContext(), R.layout.custom_spinner, genders);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.custom_simple_spinner_dropdown_item);
         genderSpinner.setBackgroundColor(getResources().getColor(R.color.lime_200));
         genderSpinner.setAdapter(dataAdapter);
         TextView resultText = view.findViewById(R.id.feedbackText);

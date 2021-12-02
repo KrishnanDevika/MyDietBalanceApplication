@@ -25,6 +25,7 @@
             android:gravity="center"
             android:layout_marginTop="@dimen/layout_padding"
             android:textSize="@dimen/credit_title_size"
+            android:textColor="@color/green_700"
             android:text="@string/author"
             android:textStyle="bold" />
 
@@ -35,6 +36,7 @@
             android:text="@string/authorName"
             android:layout_margin="@dimen/layout_padding"
             android:fontFamily="cursive"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="@dimen/credit_title_size" />
 
@@ -44,6 +46,7 @@
             android:layout_height="wrap_content"
             android:text="@string/thanks"
             android:fontFamily="serif"
+            android:textColor="@color/green_700"
             android:layout_marginTop="@dimen/inner_layout_padding"
             android:paddingTop="@dimen/layout_padding"
             android:gravity="center"
@@ -55,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/memberName"
+            android:textColor="@color/black"
             android:fontFamily="cursive"
             android:layout_margin="@dimen/layout_padding"
             android:gravity="center"
@@ -66,6 +70,7 @@
             android:layout_height="wrap_content"
             android:text="@string/specialThanks"
             android:layout_marginTop="@dimen/inner_layout_padding"
+            android:textColor="@color/green_700"
             android:paddingTop="@dimen/layout_padding"
             android:fontFamily="serif"
             android:gravity="center"
@@ -78,6 +83,7 @@
             android:layout_height="wrap_content"
             android:text="@string/specialName"
             android:layout_margin="@dimen/layout_padding"
+            android:textColor="@color/black"
             android:fontFamily="cursive"
             android:gravity="center"
             android:textSize="@dimen/credit_title_size"/>
@@ -89,6 +95,7 @@
             android:text="@string/refernces"
             android:fontFamily="serif"
             android:gravity="center"
+            android:textColor="@color/green_700"
             android:layout_marginTop="@dimen/inner_layout_padding"
             android:paddingTop="@dimen/layout_padding"
             android:textSize="@dimen/credit_title_size"
@@ -102,6 +109,7 @@
             android:fontFamily="cursive"
             android:gravity="center"
             android:layout_margin="@dimen/layout_padding"
+            android:textColor="@color/black"
             android:textSize="@dimen/credit_title_size"/>
 
         <TextView
@@ -111,6 +119,7 @@
             android:text="@string/imgref2"
             android:fontFamily="cursive"
             android:layout_margin="@dimen/layout_padding"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="@dimen/credit_title_size"/>
 
@@ -121,6 +130,7 @@
             android:text="@string/ref1"
             android:fontFamily="cursive"
             android:layout_margin="@dimen/layout_padding"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="@dimen/credit_title_size"/>
     </LinearLayout>
