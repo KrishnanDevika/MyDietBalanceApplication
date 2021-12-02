@@ -77,7 +77,7 @@ public class SettingsFragment extends Fragment {
         settingOptions.add(new SettingOptions(R.drawable.scale, "Units", "Units Preferences"));
         settingOptions.add(new SettingOptions(R.drawable.ic_baseline_share_24, "Share App", ""));
         settingOptions.add(new SettingOptions(R.drawable.ic_baseline_help_24, "Help", "Frequently asked Questions"));
-        settingOptions.add(new SettingOptions(R.drawable.ic_baseline_remember_me_24, "Credits" , "Thanks to"));
+        settingOptions.add(new SettingOptions(R.drawable.ic_baseline_remember_me_24, "Credits" , ""));
 
         settingsList.setAdapter(new CustomSettingsListAdapter(getContext(), settingOptions));
 

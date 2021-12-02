@@ -138,9 +138,7 @@ public class UserProfileFragment extends Fragment {
                         }
                         bmi = Calculator.bmiCalculation(weight, height);
                         resultText.setVisibility(View.VISIBLE);
-                        resultText.setText("Based on your Height and Weight your Body Mass Index(BMI) is " + String.format("%.2f", bmi) + "\n" +
-                                "Category : " +
-                                "'" + Calculator.feedback.toUpperCase() + "'");
+                        resultText.setText(new StringBuilder().append("Based on your Height and Weight your Body Mass Index(BMI) is ").append(String.format("%.2f", bmi)).append("\n").append("Category : ").append("'").append(Calculator.feedback.toUpperCase()).append("'").toString());
                         Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.image_animation);
                         resultText.startAnimation(animation);
 

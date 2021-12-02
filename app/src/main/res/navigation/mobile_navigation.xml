@@ -74,11 +74,6 @@
         android:label="@string/fragment_diet_tips"
         tools:layout="@layout/fragment_diet_tips"/>
     <fragment
-        android:id="@+id/nav_blog"
-        android:name="com.example.dietbalanceapplication.BlogFragment"
-        android:label="@string/fragment_bog"
-        tools:layout="@layout/fragment_blog" />
-    <fragment
         android:id="@+id/nav_info"
         android:name="com.example.dietbalanceapplication.ContactsList.MoreInfoFragment"
         android:label="@string/fragment_more_info"
