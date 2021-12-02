@@ -62,13 +62,13 @@ public class Calculator {
             case "Light exercise or sports (1 -3) days/week":
                 caloriesNeeded = bmr * 1.375;
                 break;
-            case "moderate exercise or sports (3 - 5) days/week":
+            case "Moderate exercise or sports (3 - 5) days/week":
                 caloriesNeeded = bmr * 1.55;
                 break;
-            case "hard exercise or sports (6 - 7) days/week":
+            case "Hard exercise or sports (6 - 7) days/week":
                 caloriesNeeded = bmr * 1.725;
                 break;
-            case "very hard exercise or sports/physical job":
+            case "Very hard exercise or sports/physical job":
                 caloriesNeeded = bmr * 1.9;
                 break;
             default:
