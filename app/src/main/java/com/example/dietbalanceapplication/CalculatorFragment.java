@@ -102,19 +102,19 @@ public class CalculatorFragment extends Fragment {
         genders.add("Male");
         genders.add("Female");
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getContext(), R.layout.custom_spinner, genders);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.custom_simple_spinner_dropdown_item);
         gender.setBackgroundColor(getResources().getColor(R.color.lime_200));
         gender.setAdapter(dataAdapter);
 
         ArrayList<String> exercises = new ArrayList<>();
         exercises.add("Little or no exercises");
         exercises.add("Light exercise or sports (1 -3) days/week");
-        exercises.add("moderate exercise or sports (3 - 5) days/week");
-        exercises.add("hard exercise or sports (6 - 7) days/week");
-        exercises.add("very hard exercise or sports/physical job");
+        exercises.add("Moderate exercise or sports (3 - 5) days/week");
+        exercises.add("Hard exercise or sports (6 - 7) days/week");
+        exercises.add("Very hard exercise or sports/physical job");
 
         ArrayAdapter<String> data = new ArrayAdapter<>(getContext(), R.layout.custom_spinner, exercises);
-        data.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        data.setDropDownViewResource(R.layout.custom_simple_spinner_dropdown_item);
         exercise.setBackgroundColor(getResources().getColor(R.color.lime_200));
         exercise.setAdapter(data);
         if(heightUnit.equalsIgnoreCase("cm")) {

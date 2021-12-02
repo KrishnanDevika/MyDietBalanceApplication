@@ -1,0 +1,9 @@
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:padding="@dimen/inner_layout_padding"
+    android:singleLine="true"
+    android:textColor="@color/black"
+    android:textSize="@dimen/contact_list_text_size" />

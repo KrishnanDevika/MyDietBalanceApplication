@@ -75,6 +75,7 @@
             android:id="@+id/genderSelector"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:popupBackground="@color/lightlime"
             android:layout_margin="@dimen/layout_padding"
             android:padding="@dimen/layout_padding" />
 
@@ -175,9 +176,12 @@
             android:id="@+id/feedbackText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/lightlime"
+            android:padding="@dimen/layout_padding"
+            android:shadowRadius="5"
             android:layout_columnSpan="2"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/green_700"
             android:textSize="@dimen/contact_title_size"
             android:textStyle="bold"
             android:visibility="gone"

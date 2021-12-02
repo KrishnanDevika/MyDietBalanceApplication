@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -88,7 +90,7 @@ public class UserProfileFragment extends Fragment {
         genders.add("Male");
         genders.add("Female");
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getContext(), R.layout.custom_spinner, genders);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.custom_simple_spinner_dropdown_item);
         genderSpinner.setBackgroundColor(getResources().getColor(R.color.lime_200));
         genderSpinner.setAdapter(dataAdapter);
         TextView resultText = view.findViewById(R.id.feedbackText);
@@ -136,9 +138,9 @@ public class UserProfileFragment extends Fragment {
                         }
                         bmi = Calculator.bmiCalculation(weight, height);
                         resultText.setVisibility(View.VISIBLE);
-                        resultText.setText("Based on your Height and Weight your Body Mass Index(BMI) is " + String.format("%.2f", bmi) + "\n" +
-                                "You are in the Category of \n" +
-                                "'" + Calculator.feedback.toUpperCase() + "'");
+                        resultText.setText(new StringBuilder().append("Based on your Height and Weight your Body Mass Index(BMI) is ").append(String.format("%.2f", bmi)).append("\n").append("Category : ").append("'").append(Calculator.feedback.toUpperCase()).append("'").toString());
+                        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.image_animation);
+                        resultText.startAnimation(animation);
 
                         getWeight = weightText.getText().toString();
                         getHeight = heightText.getText().toString();

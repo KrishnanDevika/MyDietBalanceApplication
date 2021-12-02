@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 import com.example.dietbalanceapplication.R;
 
@@ -61,6 +64,10 @@ public class VeggieFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_veggie, container, false);
+        View view = inflater.inflate(R.layout.fragment_veggie, container, false);
+        ImageView recipeImage = view.findViewById(R.id.imageView);
+        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.image_animation);
+        recipeImage.startAnimation(animation);
+        return view;
     }
 }

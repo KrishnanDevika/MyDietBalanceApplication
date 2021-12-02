@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardBackgroundColor="@color/green_700"
+    app:cardBackgroundColor="@color/green_500"
     app:cardCornerRadius="8dp"
     app:cardUseCompatPadding="true">
 
@@ -54,14 +53,13 @@
                 android:id="@+id/contact_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/layout_padding"
                 android:paddingLeft="10dp"
                 android:paddingTop="0dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:text="contactDesc"
                 android:textColor="@color/black"
-                android:textSize="@dimen/contact_list_text_size"
+                android:textSize="@dimen/sub_text_size"
                 android:textStyle="italic" />
         </LinearLayout>
 

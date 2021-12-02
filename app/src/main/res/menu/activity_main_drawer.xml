@@ -25,10 +25,6 @@
             android:icon="@drawable/ic_baseline_tips_and_updates_24"
             android:title="@string/fragment_diet_tips" />
         <item
-            android:id="@+id/nav_blog"
-            android:icon="@drawable/ic_baseline_web_24"
-            android:title="@string/fragment_bog" />
-        <item
             android:id="@+id/nav_info"
             android:icon="@drawable/ic_baseline_info_24"
             android:title="@string/fragment_more_info" />

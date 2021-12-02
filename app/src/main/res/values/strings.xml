@@ -23,7 +23,7 @@
 
     <string name="avocado">Avocado Sandwich</string>
     <string name="avocadoDesc">\t\t\tThis is a good option for lunch or dinner. It does not use too much cheese, and avocados contain healthy fats and nutrients </string>
-   <string name="nutrition">Nutrition Facts</string>
+    <string name="nutrition">Nutrition Facts</string>
     <string name="nutritionContent">* Calories 855</string>
     <string name="proteinContent">* Protein 32.9g</string>
     <string name="carboContent">* Carbohydrates 31.2g</string>
@@ -82,7 +82,7 @@
     <string name="SaladStep1">1.In a large bowl, combine the cauliflower, broccoli, cherry tomatoes, olives and cheese.</string>
     <string name="SaladStep2">2.Add enough dressing to coat, toss and refrigerate overnight.</string>
 
-     <string name="omelet">Cheese Omelet</string>
+    <string name="omelet">Cheese Omelet</string>
     <string name="omeletDesc">\t\t\tThis is a good option for lunch or dinner.You can add a fried egg on top of anything and make it more of a hearty meal, like on top of salad</string>
     <string name="omelet_ing1">1. 2 teaspoons vegetable oil</string>
     <string name="omelet_ing2">2. Small Onion Chopped</string>
@@ -94,16 +94,16 @@
     <string name="omelet_ing8">8. Dried dill Weed</string>
     <string name="omelet_ing9">9. Garlic powder</string>
     <string name="omelet_ing10">10. Tuna drained</string>
-   <string name="omeletCalorie">* Calories 627</string>
-   <string name="proteinOmelet">* Protein 40.6g</string>
-   <string name="carboOmelet">* Carbohydrates 10.8g</string>
-   <string name="fatOmelet">* Fat 46.6g</string>
-   <string name="cholesterolOmelet">* Cholesterol 419mg</string>
-   <string name="sodiumOmelet">* Sodium 740.4mg</string>
-   <string name="OmeletStep1">1.Heat 2 teaspoons vegetable oil in a large pan. Cook and stir onion over medium heat until onions begin to brown.</string>
-   <string name="OmeletStep2">2.Combine tuna, cream cheese, mozzarella cheese, olives, dill, garlic powder, and cooked onion in a large bowl.</string>
-   <string name="OmeletStep3">3.Beat eggs with milk in a large bowl. Heat 2 teaspoons of oil in the pan used to cook the onions. Pour the egg mixture into the hot pan. </string>
-   <string name="OmeletStep4">4.When eggs are almost fully set, spoon tuna mixture onto one half of the eggs; fold the un topped half over the filling. Cover pan, and remove from heat. </string>
+    <string name="omeletCalorie">* Calories 627</string>
+    <string name="proteinOmelet">* Protein 40.6g</string>
+    <string name="carboOmelet">* Carbohydrates 10.8g</string>
+    <string name="fatOmelet">* Fat 46.6g</string>
+    <string name="cholesterolOmelet">* Cholesterol 419mg</string>
+    <string name="sodiumOmelet">* Sodium 740.4mg</string>
+    <string name="OmeletStep1">1.Heat 2 teaspoons vegetable oil in a large pan. Cook and stir onion over medium heat until onions begin to brown.</string>
+    <string name="OmeletStep2">2.Combine tuna, cream cheese, mozzarella cheese, olives, dill, garlic powder, and cooked onion in a large bowl.</string>
+    <string name="OmeletStep3">3.Beat eggs with milk in a large bowl. Heat 2 teaspoons of oil in the pan used to cook the onions. Pour the egg mixture into the hot pan. </string>
+    <string name="OmeletStep4">4.When eggs are almost fully set, spoon tuna mixture onto one half of the eggs; fold the un topped half over the filling. Cover pan, and remove from heat. </string>
 
 
     <string name="quesadillas">Greek Quesadillas</string>
@@ -128,7 +128,6 @@
     <string name="direction4">4. Repeat with remaining ingredients. Cut quesadillas into wedges</string>
 
 
-
     <string name="veggie">Veggie Sandwich</string>
     <string name="veggieDesc">\t\t\tThis sandwich is made with hummus – and it is vegan-friendly. Combine whatever vegetables you have on hand with hummus on a sandwich. It is delicious and satisfying, and it is good for you. </string>
     <string name="veggie_ing1">1. 2 slices Bread</string>
@@ -150,7 +149,6 @@
     <string name="veggieStep1">1. Top one slice of whole wheat bread with Cheddar cheese, onion, tomato, bell pepper, avocado, and spinach.</string>
     <string name="veggieStep2">2. Season with salt and pepper, and sprinkle with olive oil and vinegar. </string>
     <string name="veggieStep3">3. Top with dill pickle slices, olives, jalapeno pepper, and the second slice of bread.</string>
-
 
 
     <string name="DieticianNearby">Dietician Nearby</string>
@@ -184,5 +182,16 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="author">Author</string>
+    <string name="authorName">Devika Krishnan</string>
+    <string name="thanks">Thanks to</string>
+    <string name="memberName">Ramana Varma</string>
+    <string name="specialThanks">Special Thanks to</string>
+    <string name="specialName">Cai Filiault</string>
+    <string name="refernces">References</string>
+    <string name="imgref1">https://pixabay.com</string>
+    <string name="imgref2">https://creativecommons.org</string>
+    <string name="ref1">Calories Calculation Formulas from https://www.freedieting.com</string>
 
 </resources>

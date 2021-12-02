@@ -1,5 +1,6 @@
 package com.example.dietbalanceapplication;
 
+import android.graphics.drawable.Animatable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,13 +8,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.LinearLayout;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link BlogFragment#newInstance} factory method to
+ * Use the {@link CreditsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BlogFragment extends Fragment {
+public class CreditsFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +28,7 @@ public class BlogFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public BlogFragment() {
+    public CreditsFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +38,11 @@ public class BlogFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment BlogFragment.
+     * @return A new instance of fragment CreditsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static BlogFragment newInstance(String param1, String param2) {
-        BlogFragment fragment = new BlogFragment();
+    public static CreditsFragment newInstance(String param1, String param2) {
+        CreditsFragment fragment = new CreditsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +63,10 @@ public class BlogFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blog, container, false);
+        View view = inflater.inflate(R.layout.fragment_credits, container, false);
+        LinearLayout layout = view.findViewById(R.id.creditLayout);
+        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.step_animation);
+        layout.startAnimation(animation);
+        return view;
     }
 }

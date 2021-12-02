@@ -26,33 +26,53 @@
         tools:layout="@layout/fragment_recipes" >
         <action
             android:id="@+id/action_nav_recipe_to_avocadoFragment"
-            app:destination="@id/avocadoFragment" />
+            app:destination="@id/avocadoFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
         <action
             android:id="@+id/action_nav_recipe_to_eggsFragment"
-            app:destination="@id/eggsFragment" />
+            app:destination="@id/eggsFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
         <action
             android:id="@+id/action_nav_recipe_to_omeletFragment"
-            app:destination="@id/omeletFragment" />
+            app:destination="@id/omeletFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
         <action
             android:id="@+id/action_nav_recipe_to_quesadillasFragment"
-            app:destination="@id/quesadillasFragment" />
+            app:destination="@id/quesadillasFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
         <action
             android:id="@+id/action_nav_recipe_to_saladFragment"
-            app:destination="@id/saladFragment" />
+            app:destination="@id/saladFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
         <action
             android:id="@+id/action_nav_recipe_to_veggieFragment"
-            app:destination="@id/veggieFragment" />
+            app:destination="@id/veggieFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
+
     </fragment>
     <fragment
         android:id="@+id/nav_tips"
         android:name="com.example.dietbalanceapplication.DietTipsViewPager.DietTipsFragment"
         android:label="@string/fragment_diet_tips"
-        tools:layout="@layout/fragment_diet_tips" />
-    <fragment
-        android:id="@+id/nav_blog"
-        android:name="com.example.dietbalanceapplication.BlogFragment"
-        android:label="@string/fragment_bog"
-        tools:layout="@layout/fragment_blog" />
+        tools:layout="@layout/fragment_diet_tips"/>
     <fragment
         android:id="@+id/nav_info"
         android:name="com.example.dietbalanceapplication.ContactsList.MoreInfoFragment"
@@ -107,4 +127,9 @@
         android:id="@+id/nav_units"
         android:name="com.example.dietbalanceapplication.UnitsFragment"
         android:label="Units" />
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.example.dietbalanceapplication.CreditsFragment"
+        android:label="Credits"
+        tools:layout="@layout/fragment_credits" />
 </navigation>

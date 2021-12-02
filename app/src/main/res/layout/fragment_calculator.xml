@@ -147,6 +147,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/layout_padding"
+            android:popupBackground="@color/lightlime"
             android:padding="@dimen/layout_padding"
             android:visibility="gone" />
 
@@ -166,6 +167,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/layout_padding"
+            android:popupBackground="@color/lightlime"
             android:padding="@dimen/layout_padding"
             android:visibility="gone" />
 
@@ -182,10 +184,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_columnSpan="2"
+            android:background="@color/lightlime"
             android:textStyle="bold"
             android:textSize="@dimen/contact_title_size"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/green_700"
             android:padding="@dimen/layout_padding"
             android:layout_margin="@dimen/layout_padding"
             android:visibility="gone" />

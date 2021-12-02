@@ -11,14 +11,17 @@
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/drawable/ic_baseline_tips_and_updates_24.xml" value="0.22870370370370371" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2111111111111111" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/drawable/side_nav_bar.xml" value="0.2111111111111111" />
+        <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/activity_main.xml" value="0.291213768115942" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/contact_list_view.xml" value="0.36666666666666664" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/custom_list_view.xml" value="0.33" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/custom_settings_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/custom_simple_spinner_dropdown_item.xml" value="0.291213768115942" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/custom_spinner.xml" value="0.25407608695652173" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/fragment_avocado.xml" value="0.13425925925925927" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/fragment_blog.xml" value="0.36666666666666664" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/fragment_calculator.xml" value="0.20572916666666666" />
+        <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/fragment_credits.xml" value="0.291213768115942" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/fragment_details.xml" value="0.36666666666666664" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/fragment_diet_balance.xml" value="0.36666666666666664" />
         <entry key="..\:/MAD 2021 FALL/Android 2/AndroidFinalProject/MyDietBalanceApplication/app/src/main/res/layout/fragment_eggs.xml" value="0.13425925925925927" />

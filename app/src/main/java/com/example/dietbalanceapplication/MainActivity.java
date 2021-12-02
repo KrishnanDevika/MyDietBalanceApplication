@@ -1,13 +1,9 @@
 package com.example.dietbalanceapplication;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
-import android.widget.Toast;
-
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -21,6 +17,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.dietbalanceapplication.databinding.ActivityMainBinding;
 
+/**
+ * @author  Devika Krishnan
+ * MainActivity holds all the novigation to various destination
+ */
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_diet, R.id.nav_profile, R.id.nav_calc, R.id.nav_recipe, R.id.nav_tips, R.id.nav_blog, R.id.nav_info)
+                R.id.nav_diet, R.id.nav_profile, R.id.nav_calc, R.id.nav_recipe, R.id.nav_tips, R.id.nav_info)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
