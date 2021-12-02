@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_lime"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/creditLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/inner_layout_padding"
+        android:padding="@dimen/layout_padding"
+        tools:context=".CreditsFragment">
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/layout_padding"
+            android:textSize="@dimen/credit_title_size"
+            android:text="@string/author"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/authorNAme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/authorName"
+            android:layout_margin="@dimen/layout_padding"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textSize="@dimen/credit_title_size" />
+
+        <TextView
+            android:id="@+id/thanks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thanks"
+            android:fontFamily="serif"
+            android:layout_marginTop="@dimen/inner_layout_padding"
+            android:paddingTop="@dimen/layout_padding"
+            android:gravity="center"
+            android:textSize="@dimen/credit_title_size"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/reference1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/memberName"
+            android:fontFamily="cursive"
+            android:layout_margin="@dimen/layout_padding"
+            android:gravity="center"
+            android:textSize="@dimen/credit_title_size"/>
+
+        <TextView
+            android:id="@+id/specialThanks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/specialThanks"
+            android:layout_marginTop="@dimen/inner_layout_padding"
+            android:paddingTop="@dimen/layout_padding"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textSize="@dimen/credit_title_size"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/memberName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/specialName"
+            android:layout_margin="@dimen/layout_padding"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textSize="@dimen/credit_title_size"/>
+
+        <TextView
+            android:id="@+id/imageAssets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/refernces"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/inner_layout_padding"
+            android:paddingTop="@dimen/layout_padding"
+            android:textSize="@dimen/credit_title_size"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/asset1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/imgref1"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:layout_margin="@dimen/layout_padding"
+            android:textSize="@dimen/credit_title_size"/>
+
+        <TextView
+            android:id="@+id/asset2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/imgref2"
+            android:fontFamily="cursive"
+            android:layout_margin="@dimen/layout_padding"
+            android:gravity="center"
+            android:textSize="@dimen/credit_title_size"/>
+
+        <TextView
+            android:id="@+id/asset3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ref1"
+            android:fontFamily="cursive"
+            android:layout_margin="@dimen/layout_padding"
+            android:gravity="center"
+            android:textSize="@dimen/credit_title_size"/>
+    </LinearLayout>
+
+</ScrollView>

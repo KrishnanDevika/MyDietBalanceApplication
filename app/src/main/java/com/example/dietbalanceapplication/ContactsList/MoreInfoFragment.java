@@ -80,7 +80,7 @@ public class MoreInfoFragment extends Fragment {
         contacts.add(new Contacts(R.drawable.ic_baseline_call_24, "Call", "+1 229(246)4536"));
         contacts.add(new Contacts(R.drawable.ic_baseline_message_24, "SMS", "+1 229(246)4536"));
         contacts.add(new Contacts(R.drawable.ic_baseline_facebook_24, "Follow us", "https://www.facebook.com/"));
-        contacts.add(new Contacts(R.drawable.ic_baseline_timer_24, "Set Alarm", "Time for Physical Exercise"));
+        contacts.add(new Contacts(R.drawable.ic_baseline_timer_24, "Remainder", "Time for Physical Exercise"));
 
         contactList.setAdapter(new CustomContactListAdapter(getContext(), contacts));
         contactList.setOnItemClickListener(new AdapterView.OnItemClickListener() {

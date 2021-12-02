@@ -77,8 +77,7 @@ public class SettingsFragment extends Fragment {
         settingOptions.add(new SettingOptions(R.drawable.scale, "Units", "Units Preferences"));
         settingOptions.add(new SettingOptions(R.drawable.ic_baseline_share_24, "Share App", ""));
         settingOptions.add(new SettingOptions(R.drawable.ic_baseline_help_24, "Help", "Frequently asked Questions"));
-        settingOptions.add(new SettingOptions(R.drawable.ic_baseline_contact_mail_24, "Contact Us", ""));
-
+        settingOptions.add(new SettingOptions(R.drawable.ic_baseline_remember_me_24, "Credits" , "Thanks to"));
 
         settingsList.setAdapter(new CustomSettingsListAdapter(getContext(), settingOptions));
 
@@ -102,17 +101,8 @@ public class SettingsFragment extends Fragment {
                         Navigation.findNavController(view).navigate(R.id.nav_faq);
                         break;
                     case 4:
-                        String EmailAddress[] = {"aaramvarma@gmail.com"};
-                        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                        emailIntent.setType("message/rfc822");
-                        emailIntent.putExtra(Intent.EXTRA_EMAIL  ,EmailAddress);
-                        try {
-                            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-                        } catch (android.content.ActivityNotFoundException ex) {
-
-                        }
+                        Navigation.findNavController(view).navigate(R.id.nav_credits);
                         break;
-
                 }
             }
         });
