@@ -11,7 +11,7 @@ This app helps users to follow proper diet and keep count on their calorie’s i
 
 ### Screenshots
 
-![navigation](\app\screenshots\screen1.png)
+![navigation](/app/screenshots/screen1.png)
 
 
 ### Features
@@ -47,6 +47,12 @@ This app helps users to follow proper diet and keep count on their calorie’s i
 * ##### Dependencies
 *   implementation 'androidx.preference:preference:1.1.1'
 
+
+### Install and build
+
+* Clone the repo
+* Open the project in Android Studio
+* Build and run
 
 
 ### Author
