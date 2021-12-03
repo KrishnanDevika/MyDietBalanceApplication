@@ -3,23 +3,133 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
+    app:startDestination="@id/nav_diet">
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.dietbalanceapplication.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/nav_diet"
+        android:name="com.example.dietbalanceapplication.DietBalanceFragment"
+        android:label="@string/dietFragmentName"
+        tools:layout="@layout/fragment_diet_balance" />
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.dietbalanceapplication.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_profile"
+        android:name="com.example.dietbalanceapplication.UserProfileFragment"
+        android:label="@string/fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.dietbalanceapplication.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_calc"
+        android:name="com.example.dietbalanceapplication.CalculatorFragment"
+        android:label="@string/fragment_calculator"
+        tools:layout="@layout/fragment_calculator" />
+    <fragment
+        android:id="@+id/nav_recipe"
+        android:name="com.example.dietbalanceapplication.RecipesList.RecipesFragment"
+        android:label="@string/fragment_recipe"
+        tools:layout="@layout/fragment_recipes" >
+        <action
+            android:id="@+id/action_nav_recipe_to_avocadoFragment"
+            app:destination="@id/avocadoFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
+        <action
+            android:id="@+id/action_nav_recipe_to_eggsFragment"
+            app:destination="@id/eggsFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
+        <action
+            android:id="@+id/action_nav_recipe_to_omeletFragment"
+            app:destination="@id/omeletFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
+        <action
+            android:id="@+id/action_nav_recipe_to_quesadillasFragment"
+            app:destination="@id/quesadillasFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
+        <action
+            android:id="@+id/action_nav_recipe_to_saladFragment"
+            app:destination="@id/saladFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
+        <action
+            android:id="@+id/action_nav_recipe_to_veggieFragment"
+            app:destination="@id/veggieFragment"
+            app:enterAnim="@anim/animate_in"
+            app:exitAnim="@anim/animate_out"
+            app:popEnterAnim="@anim/animate_back_in"
+            app:popExitAnim="@anim/animate_back_out"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_tips"
+        android:name="com.example.dietbalanceapplication.DietTipsViewPager.DietTipsFragment"
+        android:label="@string/fragment_diet_tips"
+        tools:layout="@layout/fragment_diet_tips"/>
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.dietbalanceapplication.ContactsList.MoreInfoFragment"
+        android:label="@string/fragment_more_info"
+        tools:layout="@layout/fragment_more_info" />
+    <fragment
+        android:id="@+id/avocadoFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.AvocadoFragment"
+        android:label="@string/avocado"
+        tools:layout="@layout/fragment_avocado" />
+    <fragment
+        android:id="@+id/eggsFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.EggsFragment"
+        android:label="@string/eggs"
+        tools:layout="@layout/fragment_eggs" />
+    <fragment
+        android:id="@+id/omeletFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.OmeletFragment"
+        android:label="@string/omelet"
+        tools:layout="@layout/fragment_omelet" />
+    <fragment
+        android:id="@+id/quesadillasFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.QuesadillasFragment"
+        android:label="@string/quesadillas"
+        tools:layout="@layout/fragment_quesadillas" />
+    <fragment
+        android:id="@+id/saladFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.SaladFragment"
+        android:label="@string/salad"
+        tools:layout="@layout/fragment_salad" />
+    <fragment
+        android:id="@+id/veggieFragment"
+        android:name="com.example.dietbalanceapplication.SampleHealthyRecipes.VeggieFragment"
+        android:label="@string/veggie"
+        tools:layout="@layout/fragment_veggie" />
+    <fragment
+        android:id="@+id/nav_faq"
+        android:name="com.example.dietbalanceapplication.FAQRecyclerView.FAQFragment"
+        android:label="@string/faqTitle"
+        tools:layout="@layout/fragment_f_a_q" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.dietbalanceapplication.SettingsList.SettingsFragment"
+        android:label="@string/action_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.example.dietbalanceapplication.DetailsFragment"
+        android:label="Personal details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/nav_units"
+        android:name="com.example.dietbalanceapplication.UnitsFragment"
+        android:label="Units" />
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.example.dietbalanceapplication.CreditsFragment"
+        android:label="Credits"
+        tools:layout="@layout/fragment_credits" />
 </navigation>

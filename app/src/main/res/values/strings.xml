@@ -2,12 +2,196 @@
     <string name="app_name">DietBalanceApplication</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Diet Balance</string>
+    <string name="nav_header_subtitle">aaradietcare@adc.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dietFragmentName">Diet Balance</string>
+    <string name="fragment_user_profile">User Profile</string>
+    <string name="fragment_calculator">Calorie Calculator</string>
+    <string name="fragment_recipe">Sample Healthy Recipes</string>
+    <string name="fragment_diet_tips">Diet Tips</string>
+    <string name="fragment_bog">Blogs</string>
+    <string name="fragment_more_info">More Information</string>
+
+
+    <string name="avocado">Avocado Sandwich</string>
+    <string name="avocadoDesc">\t\t\tThis is a good option for lunch or dinner. It does not use too much cheese, and avocados contain healthy fats and nutrients </string>
+    <string name="nutrition">Nutrition Facts</string>
+    <string name="nutritionContent">* Calories 855</string>
+    <string name="proteinContent">* Protein 32.9g</string>
+    <string name="carboContent">* Carbohydrates 31.2g</string>
+    <string name="fatContent">* Fat 68.4g</string>
+    <string name="cholesterolContent">* Cholesterol 458.4mg</string>
+    <string name="sodiumContent">* Sodium 848.2mg</string>
+    <string name="avocado_ing">Ingredients </string>
+    <string name="ingredient1">1. 1 tablespoon Olive Oil</string>
+    <string name="ingredient2">2. 2 Large Eggs</string>
+    <string name="ingredient3">3. 1 pinch os Salt and Pepper</string>
+    <string name="ingredient4">4. 1 tablespoon butter</string>
+    <string name="ingredient5">5. 2 Slices Italian Bread</string>
+    <string name="ingredient6">6. 1 Avocado Sliced</string>
+    <string name="ingredient7">7. 1 ripe tomato</string>
+    <string name="ingredient8">8. Mozzarella Cheese</string>
+    <string name="directions">Directions</string>
+    <string name="step1">1. Heat olive oil in a pan over medium heat. Crack eggs into pan; cook for 1 to 2 minutes. Flip and cook egg until done, 2 to 5 minutes more. Transfer eggs to a plate and season with salt and pepper.</string>
+    <string name="step2">2. Spread butter onto 1 side of each bread slice.</string>
+    <string name="step3">3. Lay bread slices in the hot pan, butter-side down. Quickly layer cheese, 1 fried egg, avocado, and remaining bread slice, butter-side up. </string>
+    <string name="step4">4. Carefully flip sandwich to grill other side until golden brown, 3 to 4 minutes. remove it from the pan and cut into half.</string>
+
+    <string name="eggs">Scrambled Eggs</string>
+    <string name="eggDesc">\t\t\tEggs are a good source of protein. Eggs taste good, are protein-filled and really easy to make. </string>
+    <string name="eggCalorie">* Calories 455</string>
+    <string name="proteinEgg">* Protein 24.2g</string>
+    <string name="carboEgg">* Carbohydrates 5.5g</string>
+    <string name="fatEgg">* Fat 38.1g</string>
+    <string name="cholesterolEgg">* Cholesterol 567.5mg</string>
+    <string name="sodiumEgg">* Sodium 344.3mg</string>
+    <string name="egg_ing1">1. 6 large eggs</string>
+    <string name="egg_ing2">2. Salt</string>
+    <string name="egg_ing3">3. 2 tablespoons Olive Oil</string>
+    <string name="egg_ing4">4. Black ground pepper</string>
+    <string name="egg_ing5">5. 2 tablespoon Grated Cheese</string>
+    <string name="egg_ing6">6. 1 tablespoon Milk</string>
+    <string name="egg_ing7">7. Fresh Spinach</string>
+    <string name="direct1">1. Beat eggs, milk, and a pinch of salt together in a bowl.</string>
+    <string name="direct2">2. Heat olive oil in a pan over medium heat;  cook Spinach and stir until it is wilted, 3 to 5 minutes.</string>
+    <string name="direct3">3. Pour egg mixture into the pan and cook until eggs are still soft and halfway cooked, 2 to 3 minutes.</string>
+    <string name="direct4">4. Add grated cheese to egg mixture; cook until eggs are set and cheeses are melted, 3 to 4 more minutes. Season with salt and pepper.</string>
+
+    <string name="salad">Salad</string>
+    <string name="saladDesc">\t\t\t Sprucing up your leafy greens with veggies, beans, chickpeas, nuts or seeds, and then drizzling with olive oil and vinegar. You can add a piece of crispy bread to make it more of a meal. </string>
+    <string name="salad_ing1">1. Cauliflower Chopped </string>
+    <string name="salad_ing2">2. Broccoli Chopped </string>
+    <string name="salad_ing3">3. Cherry tomatoes </string>
+    <string name="salad_ing4">4. Black Olives </string>
+    <string name="salad_ing5">5. Grated Cheese </string>
+    <string name="salad_ing6">6. Italian Dressing</string>
+    <string name="saladCalorie">* Calories 315</string>
+    <string name="proteinSalad">* Protein 6.1g</string>
+    <string name="carboSalad">* Carbohydrates 13.4g</string>
+    <string name="fatSalad">* Fat 27.6g</string>
+    <string name="cholesterolSalad">* Cholesterol 18.7mg</string>
+    <string name="sodiumSalad">* Sodium 1370.3mg</string>
+    <string name="SaladStep1">1.In a large bowl, combine the cauliflower, broccoli, cherry tomatoes, olives and cheese.</string>
+    <string name="SaladStep2">2.Add enough dressing to coat, toss and refrigerate overnight.</string>
+
+    <string name="omelet">Cheese Omelet</string>
+    <string name="omeletDesc">\t\t\tThis is a good option for lunch or dinner.You can add a fried egg on top of anything and make it more of a hearty meal, like on top of salad</string>
+    <string name="omelet_ing1">1. 2 teaspoons vegetable oil</string>
+    <string name="omelet_ing2">2. Small Onion Chopped</string>
+    <string name="omelet_ing3">3. Cream Cheese</string>
+    <string name="omelet_ing4">4. Olives Sliced</string>
+    <string name="omelet_ing5">5. 5 Eggs</string>
+    <string name="omelet_ing6">6. Milk</string>
+    <string name="omelet_ing7">7. Salt and Pepper</string>
+    <string name="omelet_ing8">8. Dried dill Weed</string>
+    <string name="omelet_ing9">9. Garlic powder</string>
+    <string name="omelet_ing10">10. Tuna drained</string>
+    <string name="omeletCalorie">* Calories 627</string>
+    <string name="proteinOmelet">* Protein 40.6g</string>
+    <string name="carboOmelet">* Carbohydrates 10.8g</string>
+    <string name="fatOmelet">* Fat 46.6g</string>
+    <string name="cholesterolOmelet">* Cholesterol 419mg</string>
+    <string name="sodiumOmelet">* Sodium 740.4mg</string>
+    <string name="OmeletStep1">1.Heat 2 teaspoons vegetable oil in a large pan. Cook and stir onion over medium heat until onions begin to brown.</string>
+    <string name="OmeletStep2">2.Combine tuna, cream cheese, mozzarella cheese, olives, dill, garlic powder, and cooked onion in a large bowl.</string>
+    <string name="OmeletStep3">3.Beat eggs with milk in a large bowl. Heat 2 teaspoons of oil in the pan used to cook the onions. Pour the egg mixture into the hot pan. </string>
+    <string name="OmeletStep4">4.When eggs are almost fully set, spoon tuna mixture onto one half of the eggs; fold the un topped half over the filling. Cover pan, and remove from heat. </string>
+
+
+    <string name="quesadillas">Greek Quesadillas</string>
+    <string name="quesadillasDesc">\t\t\tThe Greek quesadillas are packed with vegetables such as spinach and peppers. It is just a good way to make a satisfying meal that is easy to make. </string>
+    <string name="quesadillas_ing1">1. Chopped Spinach</string>
+    <string name="quesadillas_ing2">2. Grated Cheese </string>
+    <string name="quesadillas_ing3">3. 2 tablespoon Butter </string>
+    <string name="quesadillas_ing4">4. 2 Garlic sliced</string>
+    <string name="quesadillas_ing5">5. tortillas </string>
+    <string name="quesadillas_ing6">6. 1 tablespoon Vegetable Oil </string>
+    <string name="quesadillas_ing7">7. Ground Black pepper</string>
+    <string name="quesadillas_ing8">8. Roasted Red pepper</string>
+    <string name="quesadillasCalorie">* Calories 531</string>
+    <string name="proteinQuesadillas">* Protein 19g</string>
+    <string name="carboQuesadillas">* Carbohydrates 50g</string>
+    <string name="fatQuesadillas">* Fat 27g</string>
+    <string name="cholesterolQuesadillas">* Cholesterol 21.9mg</string>
+    <string name="sodiumQuesadillas">* Sodium 246.3mg</string>
+    <string name="direction1">1.In a medium bowl, stir together Greek yogurt, cucumber, dill, and lemon juice. Season to taste with salt, pepper and red pepper flakes.</string>
+    <string name="direction2">2. In a large pan over medium heat, heat olive oil. Add one half tortilla, cut-side up. Top with a handful each of mozzarella and Spinach. Sprinkle with feta, red peppers, olives and dill. Top with the matching tortilla half, cut-side down.</string>
+    <string name="direction3">3. Cook until the cheese is melted and the bottom pita is golden, about 2 minutes. Carefully flip and continue to cook until the second side is golden, about 2 minutes more.</string>
+    <string name="direction4">4. Repeat with remaining ingredients. Cut quesadillas into wedges</string>
+
+
+    <string name="veggie">Veggie Sandwich</string>
+    <string name="veggieDesc">\t\t\tThis sandwich is made with hummus – and it is vegan-friendly. Combine whatever vegetables you have on hand with hummus on a sandwich. It is delicious and satisfying, and it is good for you. </string>
+    <string name="veggie_ing1">1. 2 slices Bread</string>
+    <string name="veggie_ing2">2. 1 Slice Cheddar Cheese </string>
+    <string name="veggie_ing3">3. 1 Slice Onion</string>
+    <string name="veggie_ing4">4. Half Tomato sliced </string>
+    <string name="veggie_ing5">5. 2 Slice Green bell Pepper </string>
+    <string name="veggie_ing6">6. Spinach </string>
+    <string name="veggie_ing7">7. Salt and Pepper </string>
+    <string name="veggie_ing8">8. Olive Oil </string>
+    <string name="veggie_ing9">9. Black olives </string>
+    <string name="veggie_ing10">10. Avocado Slices</string>
+    <string name="veggieCalorie">* Calories 379</string>
+    <string name="proteinVeggie">* Protein 16.3g</string>
+    <string name="carboVeggie">* Carbohydrates 32g</string>
+    <string name="fatVeggie">* Fat 21.6g</string>
+    <string name="cholesterolVeggie">* Cholesterol 29.8mg</string>
+    <string name="sodiumVeggie">* Sodium 1178.3mg</string>
+    <string name="veggieStep1">1. Top one slice of whole wheat bread with Cheddar cheese, onion, tomato, bell pepper, avocado, and spinach.</string>
+    <string name="veggieStep2">2. Season with salt and pepper, and sprinkle with olive oil and vinegar. </string>
+    <string name="veggieStep3">3. Top with dill pickle slices, olives, jalapeno pepper, and the second slice of bread.</string>
+
+
+    <string name="DieticianNearby">Dietician Nearby</string>
+    <string name="DieticianEmail">Email Us</string>
+    <string name="DieticianPhone">Phone</string>
+    <string name="DieticianMessage">SMS at</string>
+    <string name="DieticianSocial">Social Media</string>
+    <string name="faqTitle">Frequently Asked Question</string>
+    <string name="faqMenu">FAQ</string>
+    <string name="shareMenu">Share app</string>
+    <string name="contactMenu">Contact us</string>
+    <string name="aboutDiet">It is an application that helps users with various dietary plans. This app will help the users maintain a healthy diet. This will helps users to follow proper diet and keep count on their calorie’s intake. This will help users to lose weight, stay healthy and stronger.</string>
+    <string name="dietDesc">\t\tEating a healthy, balanced diet is one of the most important things you can do to protect your health. It is not about strict limitations, staying unrealistically thin, or depriving yourself of the foods you love. Rather, it’s about feeling great, having more energy, improving your health, and boosting your mood.Healthy lifestyle is gaining popularity day by day in this modern times.</string>
+
+    <string name="bmiButtonText">Body Mass Index</string>
+    <string name="calorieButton">Calorie Calculator</string>
+    <string name="pregnancyCalculator">Pregnancy Calorie Calculator</string>
+    <string name="feedingCalculator">BreastFeeding Calorie Calculator</string>
+    <string name="weightButton">Ideal Weight</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="author">Author</string>
+    <string name="authorName">Devika Krishnan</string>
+    <string name="thanks">Thanks to</string>
+    <string name="memberName">Ramana Varma</string>
+    <string name="specialThanks">Special Thanks to</string>
+    <string name="specialName">Cai Filiault</string>
+    <string name="refernces">References</string>
+    <string name="imgref1">https://pixabay.com</string>
+    <string name="imgref2">https://creativecommons.org</string>
+    <string name="ref1">Calories Calculation Formulas from https://www.freedieting.com</string>
+
 </resources>

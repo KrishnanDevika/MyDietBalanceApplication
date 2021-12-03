@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_lime">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_padding"
+        tools:context=".DietBalanceFragment">
+
+
+        <ImageView
+            android:id="@+id/dietImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/inner_layout_padding"
+            android:layout_margin="@dimen/layout_padding"
+            android:src="@drawable/balanceddiet" />
+
+        <TextView
+            android:id="@+id/aboutDiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"
+            android:text="@string/dietDesc" />
+
+        <TextView
+            android:id="@+id/dietDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"
+            android:text="@string/aboutDiet" />
+    </LinearLayout>
+
+</ScrollView>

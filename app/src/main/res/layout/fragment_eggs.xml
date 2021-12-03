@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_lime"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_padding"
+        android:layout_margin="@dimen/layout_padding"
+        tools:context=".SampleHealthyRecipes.EggsFragment">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/layout_padding"
+            android:src="@drawable/eggs" />
+
+        <TextView
+            android:id="@+id/recipeDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"
+            android:text="@string/eggDesc" />
+
+        <TextView
+            android:id="@+id/nutriFacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nutrition"
+            android:layout_margin="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:textColor="@color/green_700" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/inner_layout_padding"
+            android:background="@color/lightlime">
+            <TextView
+                android:id="@+id/calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/contact_list_text_size"
+                android:text="@string/eggCalorie" />
+
+            <TextView
+                android:id="@+id/protein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/contact_list_text_size"
+                android:text="@string/proteinEgg" />
+
+            <TextView
+                android:id="@+id/carbo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/carboEgg"
+                android:textSize="@dimen/contact_list_text_size"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/fat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fatEgg"
+                android:textSize="@dimen/contact_list_text_size"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/cholesterol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cholesterolEgg"
+                android:textSize="@dimen/contact_list_text_size"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/sodium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sodiumEgg"
+                android:textSize="@dimen/contact_list_text_size"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/recipeIng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/avocado_ing"
+            android:layout_margin="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:textColor="@color/green_700"/>
+
+        <TextView
+            android:id="@+id/ing1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/egg_ing1"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/egg_ing2"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/egg_ing3"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/egg_ing4"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/egg_ing5"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/egg_ing6"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ing7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/egg_ing7"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/directions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/directions"
+            android:layout_margin="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:textColor="@color/green_700"/>
+
+        <TextView
+            android:id="@+id/step1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/direct1"
+            android:layout_margin="@dimen/layout_padding"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/step2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/direct2"
+            android:layout_margin="@dimen/layout_padding"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/step3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/direct3"
+            android:layout_margin="@dimen/layout_padding"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/stp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/direct4"
+            android:layout_margin="@dimen/layout_padding"
+            android:textSize="@dimen/contact_list_text_size"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</ScrollView>

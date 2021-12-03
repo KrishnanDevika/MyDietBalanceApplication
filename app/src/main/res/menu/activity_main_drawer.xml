@@ -5,16 +5,28 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_diet"
+            android:icon="@drawable/diet"
+            android:title="@string/dietFragmentName" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:title="@string/fragment_user_profile" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_calc"
+            android:icon="@drawable/ic_baseline_calculate_24"
+            android:title="@string/fragment_calculator" />
+        <item
+            android:id="@+id/nav_recipe"
+            android:icon="@drawable/ic_baseline_food_bank_24"
+            android:title="@string/fragment_recipe" />
+        <item
+            android:id="@+id/nav_tips"
+            android:icon="@drawable/ic_baseline_tips_and_updates_24"
+            android:title="@string/fragment_diet_tips" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="@string/fragment_more_info" />
     </group>
 </menu>

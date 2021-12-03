@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_lime">
+
+    <GridLayout
+
+        android:id="@+id/main_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding"
+        android:paddingTop="@dimen/layout_padding"
+        android:columnCount="2"
+        tools:context=".UserProfileFragment">
+
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_title_size"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/layout_padding"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@color/lime_200"
+            android:textColor="@color/white"
+            android:padding="@dimen/layout_padding"
+            android:layout_margin="@dimen/layout_padding"/>
+
+        <TextView
+            android:id="@+id/ageTv"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/layout_padding"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/contact_title_size"
+            android:textColor="@color/black"
+            android:padding="@dimen/layout_padding"
+            android:text="Age" />
+
+        <EditText
+            android:id="@+id/agetEditTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_padding"
+            android:background="@color/lime_200"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:padding="@dimen/layout_padding"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/genderTV"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/layout_padding"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/contact_title_size"
+            android:textColor="@color/black"
+            android:padding="@dimen/layout_padding"
+            android:text="Gender" />
+
+
+        <Spinner
+            android:id="@+id/genderSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:popupBackground="@color/lightlime"
+            android:layout_margin="@dimen/layout_padding"
+            android:padding="@dimen/layout_padding" />
+
+        <TextView
+            android:id="@+id/heightTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_padding"
+            android:textColor="@color/black"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_title_size"
+            android:text="Height" />
+
+        <EditText
+            android:id="@+id/heightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_padding"
+            android:background="@color/lime_200"
+            android:padding="@dimen/layout_padding"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/weightTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_padding"
+            android:textColor="@color/black"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_title_size"
+            android:text="Weight" />
+
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="@dimen/layout_padding"
+            android:background="@color/lime_200"
+            android:textColor="@color/white"
+            android:padding="@dimen/layout_padding"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/phoneTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_padding"
+            android:textColor="@color/black"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_title_size"
+            android:text="Phone" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_padding"
+            android:background="@color/lime_200"
+            android:textColor="@color/white"
+            android:padding="@dimen/layout_padding"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/emailTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_padding"
+            android:textColor="@color/black"
+            android:padding="@dimen/layout_padding"
+            android:textSize="@dimen/contact_title_size"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_padding"
+            android:background="@color/lime_200"
+            android:textColor="@color/white"
+            android:padding="@dimen/layout_padding"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:gravity="center"
+            android:padding="@dimen/layout_padding"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/feedbackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightlime"
+            android:padding="@dimen/layout_padding"
+            android:shadowRadius="5"
+            android:layout_columnSpan="2"
+            android:gravity="center"
+            android:textColor="@color/green_700"
+            android:textSize="@dimen/contact_title_size"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="BMI" />
+
+    </GridLayout>
+</ScrollView>
