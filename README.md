@@ -35,16 +35,16 @@ This app helps users to follow proper diet and keep count on their calorie’s i
 
 ### Compatibility
 
-* ##### Target SDK 
+##### Target SDK
 * minSDK 21
 * maxSDK 31
 
-* ##### Enable Java 8
+##### Enable Java 8
 *     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-* ##### Dependencies
+##### Dependencies
 *   implementation 'androidx.preference:preference:1.1.1'
 
 
