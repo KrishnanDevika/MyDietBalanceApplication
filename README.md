@@ -11,7 +11,7 @@ This app helps users to follow proper diet and keep count on their calorie’s i
 
 ### Screenshots
 
-![navigation](/app/screenshots/screen1.png)
+![navigation](https://github.com/KrishnanDevika/MyDietBalanceApplication/blob/ReadMe/screenshots/screen1.PNG)
 
 
 ### Features
